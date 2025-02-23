@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Control Hub | DCVAM</title>
+    <link rel="stylesheet" href="assets/css/rubic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+        .navbar.scrolled {
+            background-color: rgb(93, 92, 92) !important;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .navbar.scrolled .nav-link,
+        .navbar.scrolled .navbar-brand {
+            color: black !important;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .team-member {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(255, 87, 51, 0.3);
+            color: #ffffff;
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #1b1a1a;
+        }
+        .social-links a {
+            display: block;
+            color: #FAD02C;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+        
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            let navbar = document.querySelector('.navbar');
+            if (window.scrollY > 450) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <nav id="scrollspy" class="navbar page-navbar navbar-dark navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="assets/imgs/logo.jpg" alt="DCVAM Logo" class="img-fluid" style="max-width: 50px; height: auto; margin-right: 10px;">
+                <strong class="text-primary">DC</strong><span class="text-light">VAM</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="header d-flex justify-content-center" style="background-image: url('assets/imgs/drone-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-7">
+                    <div class="header-content">
+                        <h3 class="header-title"><strong class="text-primary">DC</strong><span>VAM</span></h3>
+                        <h4 class="header-subtitle">Drone Control Hub</h4>
+                        <p>Maintained by DCVAM, this hub explores our research, experiments, and insights into drone control and dynamics.</p>
+                    </div>  
+                </div>
+            </div>  
+        </div>
+    </header>
+    
+    <section class="section" id="research">
+        <div class="container text-center">
+            <h6 class="display-4 has-line">Our Research Areas</h6>
+            <div class="row mt-4">
+                <div class="col-md-4"><a href="evolution/mainPage.html" class="btn btn-primary btn-lg w-100">Evolution & Big Ideas</a></div>
+                <div class="col-md-4"><a href="implementation/mainPage.html" class="btn btn-primary btn-lg w-100">Implementation & Experimentation</a></div>
+                <div class="col-md-4"><a href="dynamics/mainPage.html" class="btn btn-primary btn-lg w-100">Dynamics & The Science</a></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="about">
+        <div class="container text-center">
+            <h6 class="display-4 has-line">About DCVAM</h6>
+            <p>Meet the team behind Drone Control Hub.</p>
+            <div class="team-container">
+                <div class="team-member">
+                    <img src="assets/imgs/vezzz.png" alt="Vezhish Ali">
+                    <h2>Vezhish Ali</h2>
+                    <p class="role">Robotics Engineer</p>
+                    <p>Vezhish specializes in designing and controlling robotic systems, particularly in aerial robotics.</p>
+                    <p>Email: <a href="mailto:va07602@st.habib.edu.pk">va07602@st.habib.edu.pk</a></p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/imgs/abdullah.jpeg" alt="Abdullah">
+                    <h2>Abdullah</h2>
+                    <p class="role">Robotics Engineer</p>
+                    <p>Abdullah specializes in designing and controlling robotic systems, particularly in aerial robotics.</p>
+                    <p>Email: <a href="mailto:ma07534@st.habib.edu.pk">ma07534@st.habib.edu.pk</a></p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/imgs/muslim.jpeg" alt="Muslim Hussain">
+                    <h2>Muslim Hussain</h2>
+                    <p class="role">Robotics Engineer</p>
+                    <p>Muslim specializes in designing and controlling robotic systems, particularly in aerial robotics.</p>
+                    <p>Email: <a href="mailto:sh07730@st.habib.edu.pk">sh07730@st.habib.edu.pk</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <h6 class="display-4 has-line">Contact Us</h6>
+            <p>Get in touch to collaborate or learn more about our research.</p>
+            <form>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group pb-1">
+                            <input type="text" class="form-control" required placeholder="Name">            
+                        </div>
+                        <div class="form-group pb-1">
+                            <input type="email" class="form-control" required placeholder="Email">          
+                        </div>
+                        <div class="form-group ">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea name="" id="" cols="" rows="7" class="form-control" required placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn-primary btn-block" value="Send Message">
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer py-4 bg-dark text-light"> 
+        <div class="container text-center">
+            <p class="mb-4 small">&copy; 2025 DCVAM | All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
