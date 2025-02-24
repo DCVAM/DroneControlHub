@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Control Hub | DCVAM</title>
+    <link rel="stylesheet" href="../assets/css/rubic.css">
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <style>
+        .navbar.scrolled {
+            background-color: rgb(93, 92, 92) !important;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .navbar.scrolled .nav-link,
+        .navbar.scrolled .navbar-brand {
+            color: black !important;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .team-member {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 15px;
+            width: 300px;
+            box-shadow: 0 2px 4px rgba(255, 87, 51, 0.3);
+            color: #ffffff;
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #1b1a1a;
+        }
+        .social-links a {
+            display: block;
+            color: #FAD02C;
+            text-decoration: none;
+            margin-top: 5px;
+        }
+        
+    </style>
+    <script>
+        window.addEventListener('scroll', function() {
+            let navbar = document.querySelector('.navbar');
+            if (window.scrollY > 450) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <nav id="scrollspy" class="navbar page-navbar navbar-dark navbar-expand-md fixed-top" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../assets/imgs/logo.jpg" alt="DCVAM Logo" class="img-fluid" style="max-width: 50px; height: auto; margin-right: 10px;">
+                <strong class="text-primary">DC</strong><span class="text-light">VAM</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header d-flex justify-content-center" style="background-image: url('../assets/imgs/drone-bg.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-7">
+                    <div class="header-content">
+                        <h3 class="header-title"><strong class="text-primary">DC</strong><span>VAM</span></h3>
+                        <h4 class="header-subtitle">Evolution & Big Ideas</h4>
+                        <p>Welcome to the Evolution & Big Ideas section. Here, we explore how major breakthroughs in control theory, robotics, and drones have shaped the modern world. Each week, we uncover a key milestone that brings us closer to understanding drone control for horizontal force application.</p>
+                    </div>  
+                </div>
+            </div>  
+        </div>
+    </header>
+
+    <section class="section" id="research">
+        <div class="container text-center">
+            <h6 class="display-4 has-line">Weekly Blogs</h6>
+            <div class="row mt-4">
+                <div class="col-md-4"><a href="week1.html" class="btn btn-primary btn-lg w-100">Week 1: The Birth of Control Theory</a></div>
+                <div class="col-md-4"><a href="week2.html" class="btn btn-primary btn-lg w-100">Week 2: Early Automation & Robotics</a></div>
+                <div class="col-md-4"><a href="week3.html" class="btn btn-primary btn-lg w-100">Week 3: The Rise of Aerial Vehicles</a></div>
+                <div class="col-md-4"><a href="week4.html" class="btn btn-primary btn-lg w-100">Week 4: The Forgotten Pioneers of Control</a></div>
+                <div class="col-md-4"><a href="week5.html" class="btn btn-primary btn-lg w-100">Week 5: How AI Transformed Robotics</a></div>
+                <div class="col-md-4"><a href="week6.html" class="btn btn-primary btn-lg w-100">Week 6: The Physics of Flying Machines</a></div>
+                <div class="col-md-4"><a href="week7.html" class="btn btn-primary btn-lg w-100">Week 7: Learning from Drone Failures</a></div>
+                <div class="col-md-4"><a href="week8.html" class="btn btn-primary btn-lg w-100">Week 8: Breakthroughs in Drone-Assisted Work</a></div>
+                <div class="col-md-4"><a href="week9.html" class="btn btn-primary btn-lg w-100">Week 9: Challenges in Applying Horizontal Force</a></div>
+                <div class="col-md-4"><a href="week10.html" class="btn btn-primary btn-lg w-100">Week 10: The Future of Drone Control</a></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- <div class="container">
+        <h1>Evolution & Big Ideas</h1>
+        <p>Welcome to the Evolution & Big Ideas section. Here, we explore how major breakthroughs in control theory, robotics, and drones have shaped the modern world. Each week, we uncover a key milestone that brings us closer to understanding drone control for horizontal force application.</p>
+        
+        <div class="week-buttons">
+            <a href="week1.html">Week 1: The Birth of Control Theory</a>
+            <a href="week2.html">Week 2: Early Automation & Robotics</a>
+            <a href="week3.html">Week 3: The Rise of Aerial Vehicles</a>
+            <a href="week4.html">Week 4: The Forgotten Pioneers of Control</a>
+            <a href="week5.html">Week 5: How AI Transformed Robotics</a>
+            <a href="week6.html">Week 6: The Physics of Flying Machines</a>
+            <a href="week7.html">Week 7: Learning from Drone Failures</a>
+            <a href="week8.html">Week 8: Breakthroughs in Drone-Assisted Work</a>
+            <a href="week9.html">Week 9: Challenges in Applying Horizontal Force</a>
+            <a href="week10.html">Week 10: The Future of Drone Control</a>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2025 DCVAM | All rights reserved.</p>
+    </footer> -->
+</body>
+</html>
