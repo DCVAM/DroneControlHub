@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Details</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+        body {
+            background-color: #2b2c2f;
+            color: white;
+            font-family: 'Georgia', serif;
+        }
+
+        .container {
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .blogs {
+            text-align: left;
+            flex-basis: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .blog-post-heading {
+            display: flex;
+        }
+
+        .blog-post-heading *{
+            flex-basis: 50%;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .blog-post-heading:hover {
+            text-decoration: underline;
+        }
+
+        .blog-post h1 {
+            font-size: 48px;
+            font-weight: bold;
+            font-family: "Crimson Pro", emoji;
+        }
+
+        .blog-post .date {
+            color: #bbb;
+            font-size: 16px;
+            margin-top: -10px;
+            margin-bottom: 20px;
+        }
+
+        .blog-post-content {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .blog-post-content *{
+            flex-basis: 50%;
+        }
+
+        .blog-post .content {
+            font-size: 22px;
+            font-family: "Sans",emoji;
+            font-weight: 200;
+            line-height: 1.6;
+            color: #ddd;
+            padding-block: 10px;
+        }
+
+        .blog-post .image-container {
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .blog-post {
+            position: relative;
+        }
+
+        .blog-post:not(:first-child)::after {
+            content: "";
+            position: absolute;
+            border-top: 3px solid #454649;
+            inset: 0;
+            z-index: -1;
+        }
+
+        .image-container img {
+            display: block;
+            max-width: 99%;
+            object-fit: cover;
+            aspect-ratio: 2;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-container img:hover {
+            cursor: pointer;
+            opacity: 0.8; /* Add a visual effect to confirm hover */
+        }
+
+        .read-more-link {
+            color: inherit; /* Ensure it's not being overridden */
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .read-more-link:hover {
+            cursor: pointer;
+            color: rgb(204, 215, 252);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="spacing">
+        </div> -->
+        <div class="blogs">
+            <div class="blog-post">
+                <div class="blog-post-heading">
+                    <a href="../implementation/blogPosts/week1.html"><h1>The Beauty is in the Details Also I a</h1></a>
+                </div>
+                <p class="date">March 27, 2023</p>
+                <div class="blog-post-content">
+                    <p class="content">
+                    Great design is more than just creating an aesthetically pleasing image. It’s about paying attention 
+                    to the little things that can make a big difference in the final product. Whether it’s choosing the 
+                    right color scheme or selecting the perfect font, it’s the details that set great designs apart 
+                    from mediocre ones <span class="read-more"><a class="read-more-link" href="../implementation/blogPosts/week1.html">...Read More</a></span>
+                </p>
+                </div>
+                <div class="image-container">
+                    <a href="../implementation/blogPosts/week1.html">
+                    <img src="../assets/imgs/abdullah.jpeg" alt="Minimalist Interior Design">
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-post-heading">
+                    <a href="../implementation/blogPosts/week2.html"><h1>The Beauty is in the Details Also I a</h1></a>
+                </div>
+                <p class="date">March 27, 2023</p>
+                <div class="blog-post-content">
+                    <p class="content">
+                    Great design is more than just creating an aesthetically pleasing image. It’s about paying attention 
+                    to the little things that can make a big difference in the final product. Whether it’s choosing the 
+                    right color scheme or selecting the perfect font, it’s the details that set great designs apart 
+                    from mediocre ones <span class="read-more"><a class="read-more-link" href="../implementation/blogPosts/week2.html">...Read More</a></span>
+                </p>
+                </div>
+                <div class="image-container">
+                    <a href="../implementation/blogPosts/week2.html">
+                    <img src="../assets/imgs/abdullah.jpeg" alt="Minimalist Interior Design">
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-post-heading">
+                    <a href="../implementation/blogPosts/week3.html"><h1>The Beauty is in the Details Also I a</h1></a>
+                </div>
+                <p class="date">March 27, 2023</p>
+                <div class="blog-post-content">
+                    <p class="content">
+                    Great design is more than just creating an aesthetically pleasing image. It’s about paying attention 
+                    to the little things that can make a big difference in the final product. Whether it’s choosing the 
+                    right color scheme or selecting the perfect font, it’s the details that set great designs apart 
+                    from mediocre ones <span class="read-more"><a class="read-more-link" href="../implementation/blogPosts/week3.html">...Read More</a></span>
+                </p>
+                </div>
+                <div class="image-container">
+                    <a href="../implementation/blogPosts/week3.html">
+                    <img src="../assets/imgs/abdullah.jpeg" alt="Minimalist Interior Design">
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-post-heading">
+                    <a href="../implementation/blogPosts/week4.html"><h1>The Beauty is in the Details Also I a</h1></a>
+                </div>
+                <p class="date">March 27, 2023</p>
+                <div class="blog-post-content">
+                    <p class="content">
+                    Great design is more than just creating an aesthetically pleasing image. It’s about paying attention 
+                    to the little things that can make a big difference in the final product. Whether it’s choosing the 
+                    right color scheme or selecting the perfect font, it’s the details that set great designs apart 
+                    from mediocre ones <span class="read-more"><a class="read-more-link" href="../implementation/blogPosts/week4.html">...Read More</a></span>
+                </p>
+                </div>
+                <div class="image-container">
+                    <a href="../implementation/blogPosts/week4.html">
+                    <img src="../assets/imgs/abdullah.jpeg" alt="Minimalist Interior Design">
+                    </a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-post-heading">
+                    <a href="../implementation/blogPosts/week5.html"><h1>The Beauty is in the Details Also I a</h1></a>
+                </div>
+                <p class="date">March 27, 2023</p>
+                <div class="blog-post-content">
+                    <p class="content">
+                    Great design is more than just creating an aesthetically pleasing image. It’s about paying attention 
+                    to the little things that can make a big difference in the final product. Whether it’s choosing the 
+                    right color scheme or selecting the perfect font, it’s the details that set great designs apart 
+                    from mediocre ones <span class="read-more"><a class="read-more-link" href="../implementation/blogPosts/week5.html">...Read More</a></span>
+                </p>
+                </div>
+                <div class="image-container">
+                    <a href="../implementation/blogPosts/week5.html">
+                    <img src="../assets/imgs/abdullah.jpeg" alt="Minimalist Interior Design">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
