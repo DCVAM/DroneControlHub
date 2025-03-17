@@ -1,217 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href=
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-    </link>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of Drones</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: #2b2c2f;
-            border-bottom: 4px solid #454649; /* Strong lower border */
-            padding-block: 30px;
-            padding-inline: 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0.8;
-        }
+    <title>History Of Control</title>
+    <link rel="stylesheet" href="../../assets/css/blogpoststyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-        
-        .fontawesomeicon::before {
-            display: inline-block;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .Arrow-Left::before {
-            font: var(--fa-font-solid);
-            font-size: 15px;
-            content: ' \f060';
-        }
-
-        .navbar a {
-            color: #ff9a44;
-            text-decoration: none;
-            font-size: 20px;
-            /* z-index: 1; */
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-        
-        body {
-            background-color: #2b2c2f;
-            color: white;
-            font-family: 'Georgia', serif;
-        }
-
-        .container {
-            padding: 40px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .blogs {
-            margin-top: 50px;
-            text-align: left;
-            flex-basis: 80%;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-
-        .blog-post-heading {
-            display: flex;
-        }
-
-        .blog-post h1 {
-            font-size: 48px;
-            font-weight: bold;
-            font-family: "Crimson Pro", emoji;
-        }
-
-        .blog-post .date {
-            color: #bbb;
-            font-size: 16px;
-            margin-top: -10px;
-            margin-bottom: 20px;
-        }
-        
-
-        .blog-post .content {
-            font-size: 22px;
-            font-family: "Sans",emoji;
-            font-weight: 200;
-            line-height: 1.6;
-            color: #ddd;
-            padding-block: 10px;
-            text-align: left;
-            /* margin-left: -90px; */
-        }
-
-
-        .blog-post .image-container {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .image-container img {
-            flex-grow: 0.4;
-            display: block;
-            object-fit: cover;
-            aspect-ratio: 2;
-            transition: opacity 0.3s ease;
-        }
-
-        
-
-
-    </style>
+    
 </head>
 <body>
+
+    <!-- Navbar -->
     <div class="navbar">
-        <a class="link-back" href="../mainPage.html"><span class='Arrow-Left fontawesomeicon'></span> Evolution & Big Ideas</a>
+        <a href="../mainPage.html"><i class="fas fa-arrow-left"></i>Evolution & Big Ideas</a>
         <a href="../../index.html">Home</a>
     </div>
+
+    <!-- Blog Content -->
     <div class="container">
-        <div class="blogs">
-            <div class="blog-post">
-                <div class="blog-post-heading">
-                    <h1>History of Drones</h1>
-                </div>
-                <p class="date">March 24, 2025</p>
-                <div class="image-container">
-                    <!-- <a href="../index.html"> -->
-                    <img src="../../assets/imgs/abdullah.jpeg" alt="Minimalist Interior Design">
-                    <!-- </a> -->
-                </div>
-                <div class="blog-post-content">
+        <div class="blog-post">
+            <h1>History Of Control</h1>
+            <p class="date">March 5, 2025</p>
+
+            <div class="image-container">
+                <img src="../../assets/imgs/week1_evolution_hero.jpg" alt="Classical Mechanics">
+            </div>
+
+            <div class="content">
+                <h1>Introduction</h1>
                     
-                    <h1>Introduction</h1>
-                    <p class="content">Unmanned Aerial Vehicles (UAVs), more commonly known as drones, are emerging as an advanced technology with a myriad of applications. From delivering food to bridge inspections, drones are used everywhere. But as we have observed in this series, reaching the current era of drones required the hard work of some of the greatest minds in history, who dedicated themselves to solving the problem of flight. However, before discussing how drones were made, we must first explore why flight was needed.</p>
-                    <p class="content">Humans are naturally curious and strive to achieve fascinating feats that they observe. In the past, humans saw birds flying, which sparked the question: Can humans fly? Since then, humans have continuously attempted to achieve flight. Initially, they tried gliding rather than true powered flight, but later inventors like Leonardo da Vinci proposed designs that, in theory, could enable human flight. There were many failures until 1904, when the Wright Brothers achieved the first successful human flight.</p>
-                    <p class="content">The history of flight is a vast topic in itself. In this article, we will discuss the history of Unmanned Aerial Vehicles, more specifically, the quadrotor drone.</p>
+                    <p class="content">
+                        Every engineer or anyone who has worked on an engineering problem has used a control system in some form. Control systems play a crucial role in every branch of engineering. From maintaining the temperature in homes to keeping an airplane at its desired altitude and heading, control systems are everywhere.
+                    </p>
+                    <p class="content">
+                        One term we often hear is "Feedback Control"—a special type of control strategy where the system's output is fed back to calculate the error and make necessary adjustments. While control might seem like a modern concept, humans have been using control systems for over 2,000 years.
+                    </p>
+                    <p class="content">
+                        One of the most fascinating aspects of control systems is that they exist within the human body itself. Biological control systems regulate essential functions like blood sugar levels, blood pressure, and many more, ensuring the body operates efficiently.
+                    </p>
+                    <p class="content">
+                        In this article, we’ll explore what control systems are, their history, and how they have become an integral part of engineering—spanning applications from mechanical systems to biological processes.
+                    </p>
 
-                    <h1>Unmanned Aerial Vehicles (UAVs)</h1>
-                    <p class="content">An unmanned aerial vehicle (UAV), or unmanned aircraft system (UAS), commonly known as a drone, is an aircraft with no human pilot, crew, or passengers onboard but is instead controlled remotely or autonomously. UAVs were originally developed throughout the twentieth century for military missions deemed "dull, dirty, or dangerous" for humans. By the twenty-first century, they had become essential assets to most militaries. As control technologies improved and costs fell, their use expanded to many non-military applications. Today, when we think of UAVs, we often imagine small objects used for various applications, including children's toys. However, just a century ago, they were primarily seen as war weapons.</p>
+                    <h1>Control Systems</h1>
+                    <p class="content">The word "control" was first documented in 1564 in the writings of Thomas Harding, a theologian and religious controversialist. Since then, 17 different meanings of the word "control" have been listed. In our context, we can focus on two primary meanings of the word "control" <cite>fernandez2003control</cite>:</p>
+                    <ul>
+                        <li class="content">Controlling a system can be understood simply as testing or checking that its behavior is satisfactory.</li>
+                        <li class="content">To control is also to act, to put things in order to guarantee that the system behaves as desired.</li>
+                    </ul>
 
-                    <h2>Quadcopter</h2>
-                    <p class="content">In this article, we will be referring to UAVs as drones. We will specifically explore the history of a special kind of drone known as the quadrotor or quadcopter. A <em>quadcopter</em>, also called a quadrocopter or quadrotor, is a type of helicopter or multicopter that has four rotors. The small size and low inertia of drones allow the use of a particularly simple flight control system, which has greatly increased the practicality of small quadrotors in various applications.</p>
+                    <p class="content">Control systems can be described as "a control system manages, commands, directs, or regulates the behavior of other devices or systems using control loops. It can range from a single home heating controller using a thermostat controlling a domestic boiler to large industrial control systems which are used for controlling processes or machines. The control systems are designed via control engineering process."</p>
+
                     <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/Moments and Torques.png" alt="Configuration of a quadcopter" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 1: Configuration of a quadcopter</figcaption>
+                        <img src="../../assets/imgs/evolution/simplecontrolsystems.png" alt="Simple Control System" style="width:75%;">
+                        <figcaption>Figure 1: Simple Control System</figcaption>
                     </figure>
-                    <p class="content">In the early days of flight, quadcopters (then referred to as quadrotors or simply helicopters) were seen as a potential solution to some of the persistent challenges in vertical flight. Torque-induced control issues, as well as efficiency problems originating from the tail rotor, which generates no useful lift, could be eliminated by counter-rotation. Additionally, the relatively short blades were much easier to construct. A number of manned designs appeared in the 1920s and 1930s. These vehicles were among the first successful heavier-than-air vertical take-off and landing (VTOL) aircraft. However, early prototypes suffered from poor performance, and later prototypes required excessive pilot workload due to poor stability augmentation and limited control authority.</p>
 
-                    <h1>History of Drones</h1>
-                    <p class="content">The history of aerial robotics is very closely tied to the history of flight itself. Indeed, the rate of fatalities associated with early manned flight tests probably convinced engineers that there was a need to operate flying machines without the presence of humans on board even before potential applications of unmanned aircraft surfaced.</p>
+                    <p class="content">A simple control system comprises an input, a controller, and an output, as shown in Figure 1. Let's understand this concept with an example of a thermostat. Imagine you have a thermostat knob at your house, and you know that by rotating the knob clockwise and counter-clockwise, you can increase and decrease the temperature of the room, respectively. Now, you want to set the temperature to, say, 25°C, and the current temperature is 30°C. You will turn the knob counter-clockwise to decrease the temperature. Therefore, in this particular case, the input is the desired temperature (25°C), and the output is the position of the knob, which will ensure that the temperature is the same as desired. You are the control system, controlling and giving commands based on the input.</p>
 
-                    <h2>Unmanned Air Balloons, 1849</h2>
-                    <p class="content">Hot air balloons have been around since 1783, using a lighter-than-air gas to lift a balloon. In a history filled with wars, these balloons were seen as weapons. In 1792, Joseph-Michel Montgolfier suggested using balloons for bombing British forces in Toulon. Then, in 1807, Denmark tried to build a dirigible to bomb British ships blockading Copenhagen. However, their first actual use was in 1849, during the First Italian War of Independence, when the Austrian imperial forces used what I like to call "Balloon Bombs" on the city of Venice.</p>
+                    <h2>Feedback Control System</h2>
+                    <p class="content">The control system discussed above is often known as an open-loop controller. The opposite of this is the closed-loop controller or feedback controller, shown in Figure 2.</p>
+
                     <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/fugo.png" alt="Re-inflated Japanese Fu-Go balloon bomb" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 2: Re-inflated Japanese Fu-Go balloon bomb</figcaption>
+                        <img src="../../assets/imgs/evolution/Feedbackcontroller.png" alt="Feedback Control System" style="width:75%;">
+                        <figcaption>Figure 2: Feedback Control System</figcaption>
                     </figure>
-                    <p class="content">The Austrian forces deployed almost 200 paper hot air balloons, each equipped with 11 to 14 kg of bombs. Because remote control was difficult in the 19th century, the balloons were designed to drop their payload using time fuses. However, since they were balloons, changes in wind direction after launch caused most of them to miss their targets. Some even drifted back over Austrian lines and onto the launching ship, Vulcano. This was the first use of a drone with no human intervention.</p>
 
-                    <h2>Breguet-Richet Gyroplane, 1907</h2>
-                    <p class="content">The Gyroplane No. I was one of the earliest attempts to create a practical rotary-wing aircraft. It was designed by the Bréguet brothers with help from Professor Charles Richet. The aircraft had an uncovered open steel framework with a seat for the pilot and a powerplant at the center. Radiating from the central structure were four wire-braced tubular steel arms, each bearing a superimposed pair of four-bladed rotors. To eliminate the torque effect, two rotor sets were driven clockwise and two counterclockwise.</p>
-                    <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/gyroplane.png" alt="Model of the Bréguet-Richet Gyroplane No.1" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 3: Model of the Bréguet-Richet Gyroplane No.1</figcaption>
-                    </figure>
-                    <p class="content">The Gyroplane I had its first flight on 29 December 1907 to a height of 0.6 meters. It was not a free flight, as four men were used to steady the structure. It was neither controllable nor steerable, but it was the first time that a rotary-wing device had lifted itself and a pilot into the air. The design was later improved to create the Gyroplane II, which flew a couple of times before being damaged during a landing. This was the first time that the quadrotor configuration was used to lift a human. Although this article is about unmanned drones, this invention plays an integral part in the development of modern quadcopters.</p>
+                    <p class="content">The feedback controller is different from the simple controller in the sense that it accounts for external factors and disturbances that are unknown to the system. Let's take the example of the thermostat again. Suppose you have been using the thermostat for a very long time, and its performance has decreased. The knob shows that at this position, the temperature should be 25°C, but in reality, it is 26°C due to the low performance. In the feedback loop, the controller receives the output as feedback. Now, let's say you have a screen that shows you the current temperature of the room. You turn the knob to the position where it shows that the temperature should be 25°C, then you look at the screen and see that the actual temperature is 26°C. You realize that you need to further decrease the temperature, which means you have to turn the knob further to reach the desired temperature. This is why feedback controllers are better than open-loop controllers, as they take into account external factors.</p>
+                    
+                    <h1>History</h1>
 
-                    <h2>Planes of WWI, 1917</h2>
-                    <p class="content">After World War I, planes without pilots started to appear, and one of them was the Hewitt-Sperry Automatic Airplane, designed by Elmer Sperry and Peter Cooper Hewitt. This plane was designed as a pilotless aircraft capable of carrying explosives to its target.</p>
-                    <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/plane1.png" alt="Hewitt-Sperry Automatic Airplane in 1918" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 4: Hewitt-Sperry Automatic Airplane in 1918</figcaption>
-                    </figure>
-                    <p class="content">The first test flights of an autopilot-equipped aircraft took place in September 1917, with a human pilot on board for takeoff. By November, the system successfully flew the aircraft to its intended target at a 30-mile (48 km) range, where the distance-measuring gear would drop a bag of sand. Accuracy was within two miles (3.2 km) of the target.</p>
+                    <p class="content">Human beings have been unknowingly using control systems for the past 2000 years. The first feedback system on record is the ancient water clock of Ktesibios in Alexandria, Egypt, around the third century B.C.</p>
 
-                    <h2>Oehmichen 2, 1920</h2>
-                    <p class="content">In 1920, Etienne Oehmichen designed and experimented with six different drone models, out of which only one was able to take off: Oehmichen No. 2. This is considered to be the first quadcopter. It had four double-bladed motors at its ends and five additional double-bladed motors laterally to ensure stability. This drone was fully controllable and had a significant degree of stability.</p>
-                    <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/ohenchen.png" alt="Oehmichen No. 2 Quadrotor" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 5: Oehmichen No. 2 Quadrotor</figcaption>
-                    </figure>
-                    <p class="content">Oehmichen No. 2 completed 1,000 successful flights in 1920. After further advancements in 1923, it was able to stay airborne for several minutes. On April 14, 1924, it managed to travel a distance of 360 meters. Eventually, it covered a distance of 1 kilometer in just seven minutes. This was another piloted drone.</p>
+                    <h2>The Water Clock by Ktesibios</h2>
+                    <p class="content">One of the earliest known examples of a control system dates back to ancient Greece, around 250 BCE, when Ktesibios, a Greek engineer and inventor, designed an advanced water clock (also known as a clepsydra). This ingenious device was not just a simple timer—it incorporated one of the earliest known feedback mechanisms, making it a true control system.</p>
 
-                    <h2>De Bothezat Quadrotor, 1923</h2>
-                    <p class="content">In 1923, Dr. George de Bothezat and Ivan Jerome developed the "Flying Octopus" for the United States Army Air Service. It had four massive six-bladed rotors in an X configuration. Two small propellers with variable pitch were used for thrust and yaw control. The vehicle used collective pitch control.</p>
                     <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/bothezart.png" alt="de Bothezat helicopter" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 6: de Bothezat helicopter</figcaption>
+                        <img src="../../assets/imgs/evolution/waterclock.png" alt="Water Clock by Ktesibios" style="width:25%;">
+                        <figcaption>Figure 1: Water Clock by Ktesibios</figcaption>
                     </figure>
-                    <p class="content">Although it was successful, it suffered from complexity, control difficulties, and a high pilot workload. It was reportedly only capable of forward flight in favorable wind conditions. The highest altitude it reached was 5 meters. While it demonstrated feasibility, it was underpowered, unresponsive, mechanically complex, and susceptible to reliability problems. The pilot workload was too high during hover to attempt lateral motion. The Army canceled the program in 1924, and the aircraft was scrapped.</p>
 
-                    <h2>Convertawings Model "A" Quadrotor, 1956</h2>
-                    <p class="content">In 1956, Dr. George de Bothezat and Ivan Jerome designed another quadcopter named the Convertawings Model A Quadrotor. The unique aspect of this design was that instead of an X configuration, it had an H configuration.</p>
-                    <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/Convertawings.png" alt="Convertawings Model 'A' Quadrotor" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 7: Convertawings Model "A" Quadrotor</figcaption>
-                    </figure>
-                    <p class="content">This quadrotor demonstrated the ability to control aircraft attitude using differential thrust between the engines. It flew successfully multiple times in the mid-1950s, proving the feasibility of the quadrotor design. It was also the first four-rotor helicopter to demonstrate successful forward flight.</p>
+                    <p class="content">At its core, Ktesibios' water clock used feedback control. The float acted as a sensor, detecting changes in the water level. This information was then used to adjust the valve, which regulated the input flow to correct any deviation from the desired level. This self-regulating mechanism is what makes it a true control system—one that continuously monitors and adjusts itself to maintain stability, much like modern engineering systems.</p>
+
+                    <p class="content">The success of this early control system can be seen from the fact that water clocks of similar design were still being made in Baghdad when the Mongols captured the city in 1258 A.D. The use of this design for more than 1400 years is proof that the world was moving toward automated systems.</p>
+
+                    <h2>Early Islamic Period and Steam Engine Governors</h2>
+                    <p class="content">The knowledge of control systems from the Hellenic period was preserved in Islamic culture and later rediscovered in the West during the Renaissance <cite>bennett1996brief</cite>. By the 18th century, engineers like René-Antoine Ferchault de Réaumur built on earlier principles to develop automatic temperature control for incubators. His designs were based on Cornelius Drebbel’s invention, which used a liquid expansion mechanism connected to a U-tube with mercury to regulate temperature—a concept similar to modern thermostats.</p>
+
+                    <p class="content">In the 19th century, extensive efforts were made to improve the Watt governor, leading to thousands of new patents worldwide. Many innovations aimed to reduce the inherent offset in the Watt governor. Among them, William Siemens (1823–1883) introduced integral action in his governors patented in 1846 and 1853, replacing proportional control. This resulted in floating controllers with no fixed set point, marking a significant step toward modern automatic control.</p>
+
+                    <h2>J. C. Maxwell: On Governors</h2>
+                    <p class="content">On the 20th of February, 1868, the creator of the famous Maxwell Electromagnetic Field Equations, James Clerk Maxwell, published his paper "On Governors." Maxwell starts the paper by describing "governors" as "a machine by means of which the velocity of the system is kept nearly uniform, notwithstanding variations in the driving power or resistance" <cite>maxwell1868governors</cite>. This definition is a very good explanation of what we now know as a control system.</p>
+
+                    <p class="content" >He references Watt's and Thompson's governors, which increase the driving power to increase the velocity of the engines. However, he noted that no one had developed a mathematical model of these governors. Therefore, he stated, "I propose at present to direct the attention of engineers and mathematicians to the dynamical theory of such governors."</p>
+
+                    <p class="content">The stability of a dynamic system depends on the roots of its characteristic equation—if the real part of a complex root is positive, the system becomes unstable. The challenge was determining root locations without solving the equation directly. James Clerk Maxwell demonstrated that for second-, third-, and fourth-order systems, stability could be assessed by examining the coefficients of differential equations. Although his work was initially overlooked, it later became fundamental to engineering control theory in the early 20th century. Therefore, after 1868, control theory gained a mathematical formulation and validation, creating the basis for automatic feedback control.</p>
+
+                    <h2>Routh-Hurwitz Stability Criteria</h2>
+                    <p class="content">Maxwell’s work on system stability was later expanded by Edward J. Routh (1831–1907), who published his first results in 1874. In 1877, he introduced "Stability of Motion," drawing on the work of Cauchy and Sturm, which led to what we now call the Routh-Hurwitz stability criterion. Independently, in 1895, Swiss mathematician Adolf Hurwitz (1859–1919) derived similar criteria while assisting Aurel Boleslaw Stodola (1859–1942) on a turbine control problem.</p>
+                    <p class="content">It is important to note that during this period, many engineering advancements focused on controlling temperature, pressure, liquid levels, and rotational speeds, marking significant progress in regulation and stability, but the applications were fairly general.</p>
+
+                    <h2>Need for Proper Understanding</h2>
+                    <p class="content">For much of history, control systems were developed through trial and error rather than a structured mathematical framework. Early applications, such as water clocks, steam engines, and basic mechanical regulators, did not require a deep theoretical understanding because their control mechanisms were relatively simple. Engineers relied on practical solutions to maintain stability rather than formalized control laws.</p>
+                    <p class="content">However, as technology advanced and systems became more complex, the limitations of this approach became apparent. The emergence of hydro-mechanical systems, industrial automation, and electrical circuits introduced challenges that could not be solved with intuition alone. Precise control became essential for maintaining stability, efficiency, and reliability in these evolving systems.</p>
+                    <p class="content">A major breakthrough came in 1922, when Nicholas Minorsky (1885–1970) introduced a mathematical formulation of PID (Proportional-Integral-Derivative) control. He derived this concept by studying how a helmsman steers a ship, recognizing that control actions should depend not only on current errors but also on their rate of change and accumulated past errors. This marked a significant shift toward a scientific approach to control engineering.</p>
+                    <p class="content">Initially, Minorsky’s work was not widely recognized, as practical implementations were still limited by the lack of suitable amplification devices to convert small control signals into usable power. However, by the late 1930s, as engineers developed better actuators, valves, and electronic controllers, his ideas became foundational in modern control theory.</p>
+
+                    <h2>The Advancements in Control Across Different Fields</h2>
+                    <p class="content">Bell Telephone Laboratories worked on improving frequency response in telecommunications, leading Hendrik Bode to introduce gain and phase margin concepts in 1940. In the mechanical industry, engineers sought a theoretical foundation for control, forming the Industrial Instruments and Regulators Committee in 1936, which contributed to advancements in PID controllers. By 1942, Ziegler and Nichols introduced tuning rules for PID control. Meanwhile, at MIT, Harold L. Hazen and Gordon S. Brown developed time-domain methods, block diagrams, and differential analyzers for control system simulations. Collaborations with Manchester University led to further innovations in industrial control applications.</p>
+
+                    <h2>World War II and Optimum Controllers</h2>
+                    <p class="content">The Second World War marked a significant turning point in the advancement of control systems. One of the most pressing challenges was the development of fire-control systems for anti-aircraft guns, which had to track and predict the movement of enemy aircraft in an environment where human operators struggled to keep up with rapidly changing conditions.</p>
+                    <p class="content">At the onset of the war, anti-aircraft gun systems relied heavily on manual input, requiring up to 14 operators to track and relay information about enemy aircraft. This system was slow and prone to errors, making it ineffective against high-speed planes. By 1941, military engineers recognized the need for an automated system. This led to the integration of tracking radar with gun directors, which were then linked to gun position controllers. This advancement laid the foundation for modern feedback control systems, where real-time sensor data is processed to drive actuators with minimal human intervention.</p>
+                    <p class="content">Beyond military applications, WWII also drove research into optimal control techniques. The war demonstrated the limitations of traditional feedback systems, which were often designed under the assumption of linear, deterministic behavior. In reality, real-world systems are non-linear and subject to noise and uncertainty. This realization spurred research into more sophisticated control techniques that could account for these factors.</p>
+                    <p class="content">The post-war period saw further advancements in control theory, with figures such as Ziegler and Nichols developing methods to optimize the performance of controllers (such as PI and PID control). Their work provided a systematic way to tune control parameters for optimal performance. Similarly, Donald McDonald’s research on non-linear techniques for improving servo performance laid the groundwork for more advanced control methodologies.</p>
+                    <p class="content">By the 1950s, J.P. LaSalle’s contributions to optimal control theory introduced the concept of the bang-bang principle, which demonstrated that if an optimal control solution exists, it often involves switching between extreme values rather than gradual adjustments. These ideas were further refined in Oldenburger’s book <em>Optimal Control</em> (1966), which provided a comprehensive framework for designing controllers based on optimization principles.</p>
+
+                    <h2>State Spaces and Kalman Filters</h2>
+                    <p class="content">The development of control theory took a significant turn with the introduction of the state-space approach. Engineers in the aerospace industry, inspired by the work of Henri Poincaré, began formulating differential equations in terms of first-order equations, leading to what became known as the "state-space" approach. This method provided a systematic way to represent and analyze dynamic systems, particularly for multi-input, multi-output (MIMO) systems.</p>
+                    <p class="content">A major breakthrough came with Rudolf Kalman’s work on optimal control. He introduced a new mathematical framework to address the linear multivariable control problem, using a quadratic performance index. His contributions included the development of observability and controllability concepts, which laid the foundation for modern control system design. Kalman’s approach enabled engineers to determine whether the state variables of a system could be fully reconstructed from output measurements and whether a system’s states could be driven to any desired position using control inputs.</p>
+                    <p class="content">Additionally, Kalman, along with Richard Bucy, tackled the filtering problem, leading to the development of the Kalman-Bucy filter. This innovation demonstrated the fundamental role of feedback in filtering theory and highlighted the connection between multivariable control and multivariable feedback filtering. The Kalman filter became a critical tool in various fields, including aerospace navigation, robotics, and signal processing, due to its ability to estimate system states in the presence of noise and uncertainty.</p>
+
+                    <h1>Importance of Control Systems</h1>
+                    <p class="content">Control systems play an important role in shaping the world today because almost all systems have variables, and there is a need to set those variables to a desired set point automatically. Furthermore, there are always external factors and disturbances in real-world applications that are unknown to engineers, so control systems help mitigate their effects.</p>
+                    <p class="content">Today, control systems are used everywhere—from electrical circuits to mechanical systems, from telecommunications to biological systems. The importance of control systems can be measured by the fact that the IEEE Control Systems Society has published a book on <a href="https://ieeecss.org/impact-control-technology-2nd-edition">Impact of Control Technology</a>, which discusses the successes and challenges of control.</p>
+
+                    <h1>Personal Remarks</h1>
+                    <p class="content">I think the history of control shows us that what we see today as control is not the work of a single person. It’s not like someone just had an idea and implemented control. We saw how control evolved from 250 A.D. to the 20th century B.C. From using a float as a sensor to having Kalman Filters to estimate the state, people have contributed a lot to the field of control. The above history also teaches us that just having an idea and implementing it is not enough in the long run. At some point, there will be a need for a mathematical understanding of the system to understand different behaviors and how the system becomes unstable because you don’t want a steam engine to become unstable.</p>
+                    <p class="content">What we can learn from history is that often, when something is working, people don’t tend to go into its math. But without mathematics, you are just shooting an arrow in the dark, hoping that it will hit the bull's eye. The second thing we can learn is that research is never completed. Yes, you might complete the deliverables of a research project, but there is always room to learn and improve the current understanding of a thing.</p>
 
                     <h1>Conclusion</h1>
-                    <p class="content">In 2006, the FAA officially issued the first commercial drone permit. Since then, the era of drones has continued to evolve. Research on drones has increased, enabling their utilization in applications that were previously considered impossible. The development of open-source flight controllers such as PX4 has also enhanced the feasibility of conducting drone research.</p>
-                    
-                </div>
-            </div>            
+                    <p class="content">In conclusion, control systems are everywhere, and by looking at the history of control, there is a lot to learn—whether you are a researcher working on some groundbreaking technology or just a hobbyist who wants to learn something. You can always learn to think outside the box.</p>
+
+
+                    <h1>References</h1>
+                    <ol>
+                        <li class="content">
+                            E. Fernández-Cara and E. Zuazua, "Control theory: History, mathematical achievements and perspectives," <em>Bol. Soc. Esp. Mat. Apl</em>, vol. 26, pp. 79–140, 2003.
+                        </li>
+                        <li class="content">
+                            IEEE Control Systems Society, "History of Control Systems," [Online]. Available: <a href="https://ieeecss.org/history">https://ieeecss.org/history</a>.
+                        </li>
+                        <li class="content">
+                            IEEE Control Systems Society, "Impact of Control Technology, 2nd Edition," [Online]. Available: <a href="https://ieeecss.org/impact-control-technology-2nd-edition">https://ieeecss.org/impact-control-technology-2nd-edition</a>.
+                        </li>
+                        <li class="content">
+                            J. C. Maxwell, "I. On governors," <em>Proceedings of the Royal Society of London</em>, no. 16, pp. 270–283, 1868.
+                        </li>
+                        <li class="content">
+                            S. Bennett, "A brief history of automatic control," <em>IEEE Control Systems Magazine</em>, vol. 16, no. 3, pp. 17–25, 1996.
+                        </li>
+                        <li class="content">
+                            "Ctesibius' Water Clock," [Online]. Available: <a href="https://www.historyofinformation.com/detail.php?id=1946#:~:text=Ctesbius'%20objective%20was%20to%20regulate,container%20indicated%20the%20time%20elapsed.">https://www.historyofinformation.com/detail.php?id=1946</a>.
+                        </li>
+                    </ol>
+            </div>
         </div>
     </div>
+
+    <div class="footer">
+        &copy; 2025 - DCVAM Blog
+    </div>
+
 </body>
 </html>

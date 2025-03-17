@@ -1,155 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href=
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-    </link>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History of Control</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap');
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: #2b2c2f;
-            border-bottom: 4px solid #454649; /* Strong lower border */
-            padding-block: 30px;
-            padding-inline: 80px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-            opacity: 0.8;
-        }
+    <title>History Of Control</title>
+    <link rel="stylesheet" href="../../assets/css/blogpoststyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-        
-        .fontawesomeicon::before {
-            display: inline-block;
-            text-rendering: auto;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .Arrow-Left::before {
-            font: var(--fa-font-solid);
-            font-size: 15px;
-            content: ' \f060';
-        }
-
-        .navbar a {
-            color: #ff9a44;
-            text-decoration: none;
-            font-size: 20px;
-            /* z-index: 1; */
-        }
-
-        .navbar a:hover {
-            text-decoration: underline;
-        }
-        
-        body {
-            background-color: #2b2c2f;
-            color: white;
-            font-family: 'Georgia', serif;
-        }
-
-        .container {
-            padding: 40px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .blogs {
-            margin-top: 50px;
-            text-align: left;
-            flex-basis: 80%;
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-        }
-
-        .blog-post-heading {
-            display: flex;
-        }
-
-        .blog-post h1 {
-            font-size: 48px;
-            font-weight: bold;
-            font-family: "Crimson Pro", emoji;
-        }
-
-        .blog-post .date {
-            color: #bbb;
-            font-size: 16px;
-            margin-top: -10px;
-            margin-bottom: 20px;
-        }
-        
-
-        .blog-post .content {
-            font-size: 22px;
-            font-family: "Sans",emoji;
-            font-weight: 200;
-            line-height: 1.6;
-            color: #ddd;
-            padding-block: 10px;
-            text-align: left;
-            /* margin-left: -90px; */
-        }
-
-        /* .blog-post .li {
-            font-size: 22px;
-            font-family: "Sans",emoji;
-            font-weight: 200;
-            line-height: 1.6;
-            color: #ddd;
-            padding-block: 10px;
-            text-align: left;
-        } */
-
-
-        .blog-post .image-container {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .image-container img {
-            flex-grow: 0.4;
-            display: block;
-            object-fit: cover;
-            aspect-ratio: 2;
-            transition: opacity 0.3s ease;
-        }
-
-        
-
-
-    </style>
+    
 </head>
 <body>
+
+    <!-- Navbar -->
     <div class="navbar">
-        <a class="link-back" href="../mainPage.html"><span class='Arrow-Left fontawesomeicon'></span> Evolution & Big Ideas</a>
+        <a href="../mainPage.html"><i class="fas fa-arrow-left"></i>Evolution & Big Ideas</a>
         <a href="../../index.html">Home</a>
     </div>
-    <div class="container">
-        <div class="blogs">
-            <div class="blog-post">
-                <div class="blog-post-heading">
-                    <h1>History of Control</h1>
-                </div>
-                <p class="date">February 24, 2025</p>
-                <div class="image-container">
-                    <!-- <a href="../index.html"> -->
-                    <img src="../../assets/imgs/abdullah.jpeg" alt="Minimalist Interior Design">
-                    <!-- </a> -->
-                </div>
-                <div class="blog-post-content">
 
-                    <h1>Introduction</h1>
+    <!-- Blog Content -->
+    <div class="container">
+        <div class="blog-post">
+            <h1>History Of Control</h1>
+            <p class="date">March 5, 2025</p>
+
+            <div class="image-container">
+                <img src="../../assets/imgs/week1_evolution_hero.jpg" alt="Classical Mechanics">
+            </div>
+
+            <div class="content">
+                <h1>Introduction</h1>
                     
                     <p class="content">
                         Every engineer or anyone who has worked on an engineering problem has used a control system in some form. Control systems play a crucial role in every branch of engineering. From maintaining the temperature in homes to keeping an airplane at its desired altitude and heading, control systems are everywhere.
@@ -276,10 +156,13 @@
                             "Ctesibius' Water Clock," [Online]. Available: <a href="https://www.historyofinformation.com/detail.php?id=1946#:~:text=Ctesbius'%20objective%20was%20to%20regulate,container%20indicated%20the%20time%20elapsed.">https://www.historyofinformation.com/detail.php?id=1946</a>.
                         </li>
                     </ol>
-
-                </div>
-            </div>            
+            </div>
         </div>
     </div>
+
+    <div class="footer">
+        &copy; 2025 - DCVAM Blog
+    </div>
+
 </body>
 </html>

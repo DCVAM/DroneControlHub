@@ -7,116 +7,7 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&family=Inter:wght@300;400;600&display=swap');
-
-        body {
-            background-color: #1e1e1e;
-            color: #e0e0e0;
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(43, 44, 47, 0.95);
-            padding: 15px 50px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-        }
-
-        .navbar a {
-            color: #ff9a44;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        .navbar a:hover {
-            color: #ffbb77;
-        }
-
-        /* Page Content */
-        .container {
-            max-width: 800px;
-            padding: 80px 20px 40px;
-            text-align: justify;
-        }
-
-        .blog-post h1 {
-            font-family: 'Crimson Pro', serif;
-            font-size: 42px;
-            font-weight: 700;
-            color: #f5f5f5;
-            text-align: center;
-        }
-
-        .date {
-            text-align: center;
-            font-size: 16px;
-            color: #a0a0a0;
-            margin-top: -10px;
-            margin-bottom: 30px;
-        }
-
-        /* Blog Content */
-        .content {
-            font-size: 20px;
-            line-height: 1.8;
-            color: #dcdcdc;
-        }
-
-        .content h2 {
-            font-size: 26px;
-            font-weight: 600;
-            color: #ff9a44;
-            margin-top: 40px;
-        }
-
-        .content p {
-            margin-bottom: 20px;
-        }
-
-        .content ul, .content ol {
-            padding-left: 20px;
-        }
-
-        /* Image Styling */
-        .image-container {
-            display: flex;
-            justify-content: center;
-            margin: 30px 0;
-        }
-
-        .image-container img {
-            width: 100%;
-            max-width: 600px;
-            border-radius: 8px;
-            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Footer */
-        .footer {
-            text-align: center;
-            font-size: 14px;
-            color: #aaa;
-            padding: 20px;
-            margin-top: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="../../assets/css/blogpoststyles.css">
 </head>
 <body>
 
@@ -133,13 +24,13 @@
             <p class="date">March 5, 2025</p>
 
             <div class="image-container">
-                <img src="../../assets/imgs/Mécanique_analytique.jpg" alt="Classical Mechanics">
+                <img src="../../assets/imgs/week1_dynamics_hero.jpg" alt="Classical Mechanics">
             </div>
 
             <div class="content">
                 <p>Classical mechanics offers two distinct ways to understand the motion of objects. The first views mechanics as a theory of <strong>forces</strong>, focusing on the causes that drive motion. The second sees it as a theory of <strong>motions themselves</strong>, emphasizing the paths objects naturally take. These perspectives align with <strong>Newtonian Mechanics</strong> and <strong>Lagrangian Mechanics</strong>, each offering unique insights into the dynamics of the universe.</p>
                 
-                <h2>Newtonian Mechanics: Forces and Accelerations</h2>
+                <h1>Newtonian Mechanics: Forces and Accelerations</h1>
                 <p>Newtonian mechanics is rooted in forces—the pushes and pulls that govern how objects move. It is built on three foundational principles:</p>
                 <ol>
                     <li><strong>Inertial Frames:</strong> Objects remain at rest or move with constant momentum unless acted upon.</li>
@@ -148,17 +39,17 @@
                 </ol>
                 <p>Newton’s laws are intuitive, but their vector nature can be cumbersome for problems involving constraints or non-Cartesian systems.</p>
 
-                <h2>Lagrangian Mechanics: Energy and Variations</h2>
+                <h1>Lagrangian Mechanics: Energy and Variations</h1>
                 <p>Lagrangian mechanics shifts the focus from forces to <strong>energy</strong>. It is based on the <strong>principle of least action</strong>, where systems follow paths that minimize effort. The <strong>Lagrangian function</strong> is:</p>
                 <p>\[ L = T - V \]</p>
                 <p>where \( T \) is kinetic energy and \( V \) is potential energy. The equations of motion derive from the <strong>Euler-Lagrange equations</strong>:</p>
                 <p>\[ \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partial L}{\partial q} = 0 \]</p>
                 <p>Generalized coordinates simplify the description of systems with constraints, making this approach powerful for complex problems.</p>
 
-                <h2>A Pendulum in Two Worlds: Newton vs Lagrange</h2>
+                <h1>A Pendulum in Two Worlds: Newton vs Lagrange</h1>
                 <p>To illustrate, consider a simple pendulum with a bob of mass \( m \) and length \( l \).</p>
 
-                <h2>Newtonian Approach</h2>
+                <h1>Newtonian Approach</h1>
                 <p>The forces acting on the bob are:</p>
                 <ul>
                     <li><strong>Gravity</strong>: \( mg \) acts downward.</li>
@@ -171,7 +62,7 @@
                 <p>Simplifying:</p>
                 <p>\[ \ddot{\theta} + \frac{g}{l} \sin \theta = 0 \]</p>
 
-                <h2>Lagrangian Approach</h2>
+                <h1>Lagrangian Approach</h1>
                 <p>We define the system's energies:</p>
                 <ul>
                     <li><strong>Kinetic Energy</strong>: \[ T = \frac{1}{2} m (l \dot{\theta})^2 \]</li>
@@ -184,7 +75,7 @@
                 <p>\[ \ddot{\theta} + \frac{g}{l} \sin \theta = 0 \]</p>
                 <p>The same equation emerges, but with less effort.</p>
 
-                <h2>Why Choose Lagrangian Mechanics?</h2>
+                <h1>Why Choose Lagrangian Mechanics?</h1>
                 <p>Lagrangian mechanics offers several advantages:</p>
                 <ul>
                     <li><strong>Generality</strong>: Handles constraints naturally.</li>
@@ -192,7 +83,7 @@
                     <li><strong>Conservation Laws</strong>: Links symmetries to conserved quantities via Noether’s theorem.</li>
                 </ul>
 
-                <h2>Conclusion</h2>
+                <h1>Conclusion</h1>
                 <p>Newtonian and Lagrangian mechanics provide complementary perspectives. Newton’s method focuses on forces and accelerations, while Lagrange’s emphasizes energy and variation principles. Both are essential tools in physics, offering deep insights into the workings of the universe.</p>
             </div>
         </div>
