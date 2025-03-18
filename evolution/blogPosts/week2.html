@@ -29,131 +29,111 @@
             </div>
 
             <div class="content">
-                <h1>Introduction</h1>
-                    
-                    <p class="content">
-                        Every engineer or anyone who has worked on an engineering problem has used a control system in some form. Control systems play a crucial role in every branch of engineering. From maintaining the temperature in homes to keeping an airplane at its desired altitude and heading, control systems are everywhere.
-                    </p>
-                    <p class="content">
-                        One term we often hear is "Feedback Control"—a special type of control strategy where the system's output is fed back to calculate the error and make necessary adjustments. While control might seem like a modern concept, humans have been using control systems for over 2,000 years.
-                    </p>
-                    <p class="content">
-                        One of the most fascinating aspects of control systems is that they exist within the human body itself. Biological control systems regulate essential functions like blood sugar levels, blood pressure, and many more, ensuring the body operates efficiently.
-                    </p>
-                    <p class="content">
-                        In this article, we’ll explore what control systems are, their history, and how they have become an integral part of engineering—spanning applications from mechanical systems to biological processes.
-                    </p>
-
-                    <h1>Control Systems</h1>
-                    <p class="content">The word "control" was first documented in 1564 in the writings of Thomas Harding, a theologian and religious controversialist. Since then, 17 different meanings of the word "control" have been listed. In our context, we can focus on two primary meanings of the word "control" <cite>fernandez2003control</cite>:</p>
+                
+                    <h1>Introduction</h1>
+                    <p class="content">There are robots all around us today. In one way or another, every person is connected to a robot—whether it's industrial robots or toy robots, robotics is involved in nearly every field. But have you ever wondered why robots came into existence? Why are they so important in today's fast-moving modern world? What would happen if robots disappeared today? Or will robots ever take over the world?</p>
+                    <p class="content">In this article, we will dive deep into the origin and evolution of robots and robotics. Where did this term come from? When was the first robot made? And what exactly is robotics? Let’s start by understanding what a robot is.</p>
+                
+                    <h1>Robot and Robotics</h1>
+                    <p class="content">We have seen robots in a variety of movies, from R2D2 in <em>Star Wars</em> to Atom in <em>Real Steel</em>, from Ultron in <em>Avengers: Age of Ultron</em> to Mecha Godzilla in <em>Godzilla vs. Kong</em>. People have portrayed robots in various forms, but today, we see robots not as a threat to the world but as helpers. Robots are used in industries to automate manufacturing processes, in self-driving cars, and even as toys, such as drones.</p>
+                    <p class="content">However, defining a robot with a single, universally accepted definition is somewhat difficult. According to <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html">Stanford University</a>, there are multiple definitions for the term "robot," depending on different sources:</p>
                     <ul>
-                        <li class="content">Controlling a system can be understood simply as testing or checking that its behavior is satisfactory.</li>
-                        <li class="content">To control is also to act, to put things in order to guarantee that the system behaves as desired.</li>
+                        <li><strong>Robot Institute of America, 1979:</strong> "A reprogrammable, multifunctional manipulator designed to move material, parts, tools, or specialized devices through various programmed motions for the performance of a variety of tasks."</li>
+                        <li><strong>Webster's Dictionary:</strong> "An automatic device that performs functions normally ascribed to humans or a machine in the form of a human."</li>
+                        <li><strong>British Department of Industry:</strong> "A reprogrammable manipulator device."</li>
+                        <li><strong>Mike Brady:</strong> "Robotics is that field concerned with the intelligent connection of perception to action."</li>
                     </ul>
-
-                    <p class="content">Control systems can be described as "a control system manages, commands, directs, or regulates the behavior of other devices or systems using control loops. It can range from a single home heating controller using a thermostat controlling a domestic boiler to large industrial control systems which are used for controlling processes or machines. The control systems are designed via control engineering process."</p>
-
+                
+                    <h1>History and Evolution</h1>
+                    <p class="content">In this section, we will explore the origins of robots and how they evolved into one of the most essential technologies today. Just like control systems, the roots of robotics can be traced back thousands of years—about 5000 years ago.</p>
+                
+                    <h2>Need for Automation</h2>
+                    <p class="content">Since the beginning of civilization, humans have always sought ways to make their work easier. Automation has been a long-standing goal, minimizing human effort while maximizing efficiency. The first recorded evidence of automated machines dates back as early as 3000 B.C., when Egyptian water clocks used human figurines to strike the hour bells. Another example is the Antikythera mechanism, a complex gear-driven device built by the Greeks around 100 BCE to predict astronomical events.</p>
                     <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/simplecontrolsystems.png" alt="Simple Control System" style="width:75%;">
-                        <figcaption>Figure 1: Simple Control System</figcaption>
+                        <img src="anthikytrha mech.png" alt="Antikythera mechanism" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
+                        <figcaption>Figure 1: Antikythera mechanism</figcaption>
                     </figure>
-
-                    <p class="content">A simple control system comprises an input, a controller, and an output, as shown in Figure 1. Let's understand this concept with an example of a thermostat. Imagine you have a thermostat knob at your house, and you know that by rotating the knob clockwise and counter-clockwise, you can increase and decrease the temperature of the room, respectively. Now, you want to set the temperature to, say, 25°C, and the current temperature is 30°C. You will turn the knob counter-clockwise to decrease the temperature. Therefore, in this particular case, the input is the desired temperature (25°C), and the output is the position of the knob, which will ensure that the temperature is the same as desired. You are the control system, controlling and giving commands based on the input.</p>
-
-                    <h2>Feedback Control System</h2>
-                    <p class="content">The control system discussed above is often known as an open-loop controller. The opposite of this is the closed-loop controller or feedback controller, shown in Figure 2.</p>
-
+                    <p class="content">Throughout history, people have consistently sought ways to automate tasks and reduce their workload. This drive for automation is the fundamental motivation behind the development of robots.</p>
+                
+                    <h2>Origin of "Robots" and "Robotics"</h2>
+                    <p class="content">The concept of robots existed long before the term was coined, but the word "robot" was first used in the early 20th century. It is quite surprising that the word "robot" was introduced not by a scientist but by a writer. In 1920, Karel Čapek wrote a play titled <em>Rossum’s Universal Robots</em>, in which the term was used for the first time. The word "robot" is derived from the Czech word <strong>"robota"</strong>, which, fittingly, means "forced labor." In the play, robots were artificially created humans who were exploited by factory owners to perform labor, leading to one of the earliest depictions of a robot uprising—where the robots eventually rebelled and destroyed humanity.</p>
                     <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/Feedbackcontroller.png" alt="Feedback Control System" style="width:75%;">
-                        <figcaption>Figure 2: Feedback Control System</figcaption>
+                        <img src="RURR.png" alt="Rossum’s Universal Robots, 1938" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                        <figcaption>Figure 2: Rossum’s Universal Robots, 1938</figcaption>
                     </figure>
-
-                    <p class="content">The feedback controller is different from the simple controller in the sense that it accounts for external factors and disturbances that are unknown to the system. Let's take the example of the thermostat again. Suppose you have been using the thermostat for a very long time, and its performance has decreased. The knob shows that at this position, the temperature should be 25°C, but in reality, it is 26°C due to the low performance. In the feedback loop, the controller receives the output as feedback. Now, let's say you have a screen that shows you the current temperature of the room. You turn the knob to the position where it shows that the temperature should be 25°C, then you look at the screen and see that the actual temperature is 26°C. You realize that you need to further decrease the temperature, which means you have to turn the knob further to reach the desired temperature. This is why feedback controllers are better than open-loop controllers, as they take into account external factors.</p>
-                    
-                    <h1>History</h1>
-
-                    <p class="content">Human beings have been unknowingly using control systems for the past 2000 years. The first feedback system on record is the ancient water clock of Ktesibios in Alexandria, Egypt, around the third century B.C.</p>
-
-                    <h2>The Water Clock by Ktesibios</h2>
-                    <p class="content">One of the earliest known examples of a control system dates back to ancient Greece, around 250 BCE, when Ktesibios, a Greek engineer and inventor, designed an advanced water clock (also known as a clepsydra). This ingenious device was not just a simple timer—it incorporated one of the earliest known feedback mechanisms, making it a true control system.</p>
-
+                    <p class="content">The word <strong>"robotics"</strong> was also introduced by a writer. The term first appeared in Isaac Asimov’s science-fiction story <em>Liar!</em> (1941), in which a robot is mistakenly given the ability to read minds. Isaac Asimov is particularly significant in the field of robotics because, in his next work, <em>Runaround</em> (1942), he introduced the famous Three Laws of Robotics:</p>
+                    <ol>
+                        <li>A robot may not injure a human being, or, through inaction, allow a human being to come to harm.</li>
+                        <li>A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.</li>
+                        <li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.</li>
+                    </ol>
                     <figure style="text-align: center;">
-                        <img src="../../assets/imgs/evolution/waterclock.png" alt="Water Clock by Ktesibios" style="width:25%;">
-                        <figcaption>Figure 1: Water Clock by Ktesibios</figcaption>
+                        <img src="Liar!.png" alt="Isaac Asimov’s science-fiction story Liar!" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
+                        <figcaption>Figure 3: Isaac Asimov’s science-fiction story <em>Liar!</em></figcaption>
                     </figure>
-
-                    <p class="content">At its core, Ktesibios' water clock used feedback control. The float acted as a sensor, detecting changes in the water level. This information was then used to adjust the valve, which regulated the input flow to correct any deviation from the desired level. This self-regulating mechanism is what makes it a true control system—one that continuously monitors and adjusts itself to maintain stability, much like modern engineering systems.</p>
-
-                    <p class="content">The success of this early control system can be seen from the fact that water clocks of similar design were still being made in Baghdad when the Mongols captured the city in 1258 A.D. The use of this design for more than 1400 years is proof that the world was moving toward automated systems.</p>
-
-                    <h2>Early Islamic Period and Steam Engine Governors</h2>
-                    <p class="content">The knowledge of control systems from the Hellenic period was preserved in Islamic culture and later rediscovered in the West during the Renaissance <cite>bennett1996brief</cite>. By the 18th century, engineers like René-Antoine Ferchault de Réaumur built on earlier principles to develop automatic temperature control for incubators. His designs were based on Cornelius Drebbel’s invention, which used a liquid expansion mechanism connected to a U-tube with mercury to regulate temperature—a concept similar to modern thermostats.</p>
-
-                    <p class="content">In the 19th century, extensive efforts were made to improve the Watt governor, leading to thousands of new patents worldwide. Many innovations aimed to reduce the inherent offset in the Watt governor. Among them, William Siemens (1823–1883) introduced integral action in his governors patented in 1846 and 1853, replacing proportional control. This resulted in floating controllers with no fixed set point, marking a significant step toward modern automatic control.</p>
-
-                    <h2>J. C. Maxwell: On Governors</h2>
-                    <p class="content">On the 20th of February, 1868, the creator of the famous Maxwell Electromagnetic Field Equations, James Clerk Maxwell, published his paper "On Governors." Maxwell starts the paper by describing "governors" as "a machine by means of which the velocity of the system is kept nearly uniform, notwithstanding variations in the driving power or resistance" <cite>maxwell1868governors</cite>. This definition is a very good explanation of what we now know as a control system.</p>
-
-                    <p class="content" >He references Watt's and Thompson's governors, which increase the driving power to increase the velocity of the engines. However, he noted that no one had developed a mathematical model of these governors. Therefore, he stated, "I propose at present to direct the attention of engineers and mathematicians to the dynamical theory of such governors."</p>
-
-                    <p class="content">The stability of a dynamic system depends on the roots of its characteristic equation—if the real part of a complex root is positive, the system becomes unstable. The challenge was determining root locations without solving the equation directly. James Clerk Maxwell demonstrated that for second-, third-, and fourth-order systems, stability could be assessed by examining the coefficients of differential equations. Although his work was initially overlooked, it later became fundamental to engineering control theory in the early 20th century. Therefore, after 1868, control theory gained a mathematical formulation and validation, creating the basis for automatic feedback control.</p>
-
-                    <h2>Routh-Hurwitz Stability Criteria</h2>
-                    <p class="content">Maxwell’s work on system stability was later expanded by Edward J. Routh (1831–1907), who published his first results in 1874. In 1877, he introduced "Stability of Motion," drawing on the work of Cauchy and Sturm, which led to what we now call the Routh-Hurwitz stability criterion. Independently, in 1895, Swiss mathematician Adolf Hurwitz (1859–1919) derived similar criteria while assisting Aurel Boleslaw Stodola (1859–1942) on a turbine control problem.</p>
-                    <p class="content">It is important to note that during this period, many engineering advancements focused on controlling temperature, pressure, liquid levels, and rotational speeds, marking significant progress in regulation and stability, but the applications were fairly general.</p>
-
-                    <h2>Need for Proper Understanding</h2>
-                    <p class="content">For much of history, control systems were developed through trial and error rather than a structured mathematical framework. Early applications, such as water clocks, steam engines, and basic mechanical regulators, did not require a deep theoretical understanding because their control mechanisms were relatively simple. Engineers relied on practical solutions to maintain stability rather than formalized control laws.</p>
-                    <p class="content">However, as technology advanced and systems became more complex, the limitations of this approach became apparent. The emergence of hydro-mechanical systems, industrial automation, and electrical circuits introduced challenges that could not be solved with intuition alone. Precise control became essential for maintaining stability, efficiency, and reliability in these evolving systems.</p>
-                    <p class="content">A major breakthrough came in 1922, when Nicholas Minorsky (1885–1970) introduced a mathematical formulation of PID (Proportional-Integral-Derivative) control. He derived this concept by studying how a helmsman steers a ship, recognizing that control actions should depend not only on current errors but also on their rate of change and accumulated past errors. This marked a significant shift toward a scientific approach to control engineering.</p>
-                    <p class="content">Initially, Minorsky’s work was not widely recognized, as practical implementations were still limited by the lack of suitable amplification devices to convert small control signals into usable power. However, by the late 1930s, as engineers developed better actuators, valves, and electronic controllers, his ideas became foundational in modern control theory.</p>
-
-                    <h2>The Advancements in Control Across Different Fields</h2>
-                    <p class="content">Bell Telephone Laboratories worked on improving frequency response in telecommunications, leading Hendrik Bode to introduce gain and phase margin concepts in 1940. In the mechanical industry, engineers sought a theoretical foundation for control, forming the Industrial Instruments and Regulators Committee in 1936, which contributed to advancements in PID controllers. By 1942, Ziegler and Nichols introduced tuning rules for PID control. Meanwhile, at MIT, Harold L. Hazen and Gordon S. Brown developed time-domain methods, block diagrams, and differential analyzers for control system simulations. Collaborations with Manchester University led to further innovations in industrial control applications.</p>
-
-                    <h2>World War II and Optimum Controllers</h2>
-                    <p class="content">The Second World War marked a significant turning point in the advancement of control systems. One of the most pressing challenges was the development of fire-control systems for anti-aircraft guns, which had to track and predict the movement of enemy aircraft in an environment where human operators struggled to keep up with rapidly changing conditions.</p>
-                    <p class="content">At the onset of the war, anti-aircraft gun systems relied heavily on manual input, requiring up to 14 operators to track and relay information about enemy aircraft. This system was slow and prone to errors, making it ineffective against high-speed planes. By 1941, military engineers recognized the need for an automated system. This led to the integration of tracking radar with gun directors, which were then linked to gun position controllers. This advancement laid the foundation for modern feedback control systems, where real-time sensor data is processed to drive actuators with minimal human intervention.</p>
-                    <p class="content">Beyond military applications, WWII also drove research into optimal control techniques. The war demonstrated the limitations of traditional feedback systems, which were often designed under the assumption of linear, deterministic behavior. In reality, real-world systems are non-linear and subject to noise and uncertainty. This realization spurred research into more sophisticated control techniques that could account for these factors.</p>
-                    <p class="content">The post-war period saw further advancements in control theory, with figures such as Ziegler and Nichols developing methods to optimize the performance of controllers (such as PI and PID control). Their work provided a systematic way to tune control parameters for optimal performance. Similarly, Donald McDonald’s research on non-linear techniques for improving servo performance laid the groundwork for more advanced control methodologies.</p>
-                    <p class="content">By the 1950s, J.P. LaSalle’s contributions to optimal control theory introduced the concept of the bang-bang principle, which demonstrated that if an optimal control solution exists, it often involves switching between extreme values rather than gradual adjustments. These ideas were further refined in Oldenburger’s book <em>Optimal Control</em> (1966), which provided a comprehensive framework for designing controllers based on optimization principles.</p>
-
-                    <h2>State Spaces and Kalman Filters</h2>
-                    <p class="content">The development of control theory took a significant turn with the introduction of the state-space approach. Engineers in the aerospace industry, inspired by the work of Henri Poincaré, began formulating differential equations in terms of first-order equations, leading to what became known as the "state-space" approach. This method provided a systematic way to represent and analyze dynamic systems, particularly for multi-input, multi-output (MIMO) systems.</p>
-                    <p class="content">A major breakthrough came with Rudolf Kalman’s work on optimal control. He introduced a new mathematical framework to address the linear multivariable control problem, using a quadratic performance index. His contributions included the development of observability and controllability concepts, which laid the foundation for modern control system design. Kalman’s approach enabled engineers to determine whether the state variables of a system could be fully reconstructed from output measurements and whether a system’s states could be driven to any desired position using control inputs.</p>
-                    <p class="content">Additionally, Kalman, along with Richard Bucy, tackled the filtering problem, leading to the development of the Kalman-Bucy filter. This innovation demonstrated the fundamental role of feedback in filtering theory and highlighted the connection between multivariable control and multivariable feedback filtering. The Kalman filter became a critical tool in various fields, including aerospace navigation, robotics, and signal processing, due to its ability to estimate system states in the presence of noise and uncertainty.</p>
-
-                    <h1>Importance of Control Systems</h1>
-                    <p class="content">Control systems play an important role in shaping the world today because almost all systems have variables, and there is a need to set those variables to a desired set point automatically. Furthermore, there are always external factors and disturbances in real-world applications that are unknown to engineers, so control systems help mitigate their effects.</p>
-                    <p class="content">Today, control systems are used everywhere—from electrical circuits to mechanical systems, from telecommunications to biological systems. The importance of control systems can be measured by the fact that the IEEE Control Systems Society has published a book on <a href="https://ieeecss.org/impact-control-technology-2nd-edition">Impact of Control Technology</a>, which discusses the successes and challenges of control.</p>
-
-                    <h1>Personal Remarks</h1>
-                    <p class="content">I think the history of control shows us that what we see today as control is not the work of a single person. It’s not like someone just had an idea and implemented control. We saw how control evolved from 250 A.D. to the 20th century B.C. From using a float as a sensor to having Kalman Filters to estimate the state, people have contributed a lot to the field of control. The above history also teaches us that just having an idea and implementing it is not enough in the long run. At some point, there will be a need for a mathematical understanding of the system to understand different behaviors and how the system becomes unstable because you don’t want a steam engine to become unstable.</p>
-                    <p class="content">What we can learn from history is that often, when something is working, people don’t tend to go into its math. But without mathematics, you are just shooting an arrow in the dark, hoping that it will hit the bull's eye. The second thing we can learn is that research is never completed. Yes, you might complete the deliverables of a research project, but there is always room to learn and improve the current understanding of a thing.</p>
-
+                
+                    <h2>Unimate: The First Robot</h2>
+                    <p class="content">Today, we often think of robots as humanoid machines that look and act like humans. However, the first commercial robot was a large and bulky robotic arm called "Unimate." In 1954, George Devol filed a patent describing an autonomous machine that could store step-by-step digital commands to move parts in a factory (which he called a "programmed article transfer" device). Then, in 1958, he partnered with Joseph Engelberger to form a company called "Unimation," and their first product was "Unimate," which was put into service at a General Motors plant in Ewing Township, N.J.</p>
+                    <figure style="text-align: center;">
+                        <img src="unimate.png" alt="Unimate: First Industrial Robot" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                        <figcaption>Figure 4: Unimate: First Industrial Robot</figcaption>
+                    </figure>
+                    <p class="content">The "Unimate" was programmable and could store programs consisting of nearly 200 moves. It was used for removing and stacking hot metal parts from a die-casting machine. Unimate arms continued to be developed and sold by licensees worldwide. However, Unimate was very large and used hydraulics, which often leaked oil, making it difficult to operate.</p>
+                
+                    <h2>The Stanford Arm</h2>
+                    <p class="content">After Unimate, Victor Scheinman of Stanford University designed a 6-degree-of-freedom robotic arm called the "Stanford Arm" in 1969. This arm weighed only 15 pounds, significantly less than the metric-ton Unimate. It could move in all six degrees of freedom and did not require hydraulics, as it used motors as actuators, eliminating the problems associated with hydraulic leaks.</p>
+                    <figure style="text-align: center;">
+                        <img src="stanfordarm.png" alt="Stanford Arm" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
+                        <figcaption>Figure 5: Stanford Arm</figcaption>
+                    </figure>
+                    <p class="content">One of the most important aspects of the Stanford Arm in the evolution of robotics is that it was the first robotic arm to be controlled not just by turn-by-turn instructions stored in memory, as with Unimate, but by software running on a computer. This gave robotic arms the ability to perform tasks by knowing only the final position of their end effector using a technique called inverse kinematics, allowing them to interact with and understand their environment.</p>
+                
+                    <h2>Shakey: The First Mobile Robot</h2>
+                    <p class="content">While Unimate was in development, researchers at Stanford University were working on what John Markoff called the “great-grandfather of self-driving cars and military drones” — <strong>Shakey the Robot</strong>. This robot used a TV camera, an optical range finder, an antenna radio link, bump detectors, and a push bar to move objects. This allowed Shakey to:</p>
+                    <ul>
+                        <li class="content">Locate a specific spot in a seven-room environment</li>
+                        <li class="content">Find designated boxes and push them together into groups, according to instructions</li>
+                        <li class="content">Avoid obstacles</li>
+                    </ul>
+                    <figure style="text-align: center;">
+                        <img src="shakey.png" alt="Computer scientist Charles Rosen, one of the heads of the Shakey project" style="width:60%; display: block; margin-left: auto; margin-right: auto;">
+                        <figcaption>Figure 6: Computer scientist Charles Rosen, one of the heads of the Shakey project</figcaption>
+                    </figure>
+                    <p class="content">Shakey was a breakthrough in robotics because its control software was structured into four layers. This layered architecture was the first of its kind in robotics and became a model for future generations of robots. Shakey introduced the idea of Artificial Intelligence in robotics.</p>
+                
+                    <h2>Roomba: A Robot for Homes</h2>
+                    <p class="content">By 2002, thanks to mathematical concepts such as state estimation and AI, robots were able to understand and interact with their environment. iRobot, a company founded by MIT alumni Colin Angle, Helen Greiner, and Rodney Brooks, introduced <strong>Roomba</strong>, a vacuum-cleaning robot. This robot was capable of mapping a house, navigating autonomously while avoiding obstacles, and returning to its hub for charging.</p>
+                    <figure style="text-align: center;">
+                        <img src="roomba.png" alt="Roomba" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
+                        <figcaption>Figure 7: Roomba</figcaption>
+                    </figure>
+                    <p class="content">Roomba utilized Simultaneous Localization and Mapping (SLAM) to map and localize itself at the same time. It used a fusion of sensors to be aware of its surroundings and implemented path-planning algorithms to navigate efficiently—all computed on an onboard computer.</p>
+                
                     <h1>Conclusion</h1>
-                    <p class="content">In conclusion, control systems are everywhere, and by looking at the history of control, there is a lot to learn—whether you are a researcher working on some groundbreaking technology or just a hobbyist who wants to learn something. You can always learn to think outside the box.</p>
-
+                    <p class="content">The evolution of robotics demonstrates the incremental advancements that have led to the robots and robotic systems we see today. From Spot to Atlas, each robot builds upon the knowledge gained from past experiments, driving further innovation in the field.</p>
+                
+                    <h1>Personal Remarks</h1>
+                    <p class="content">I always thought of robotics as something purely hardware related. As I grew and started to learn more things, I thought of robotics as an intersection of electrical engineering, computer science, and mechanical engineering. But as I learned more about robotics, specifically, I realized that there is a lot of mathematics involved in this field, be it different simulations such as Monte Carlo Simulation or state estimations and Bayesian filters to update the belief about localization. From Kinematics to Dynamics. This reminds me of a line by Veritasium that he said about micro mouse, he said "... it's not a hardware problem, it's not a software problem, it's a robotics problem...". Therefore, I feel like there should be a separate field of robotics in undergraduate degrees.</p>
 
                     <h1>References</h1>
                     <ol>
                         <li class="content">
-                            E. Fernández-Cara and E. Zuazua, "Control theory: History, mathematical achievements and perspectives," <em>Bol. Soc. Esp. Mat. Apl</em>, vol. 26, pp. 79–140, 2003.
+                            "Robot Technology," <em>Encyclopedia Britannica</em>, [Online]. Available: <a href="https://www.britannica.com/technology/robot-technology">https://www.britannica.com/technology/robot-technology</a>.
                         </li>
                         <li class="content">
-                            IEEE Control Systems Society, "History of Control Systems," [Online]. Available: <a href="https://ieeecss.org/history">https://ieeecss.org/history</a>.
+                            "History of Robotics: A Comprehensive History of Evolution and Innovation," <em>Keybotic</em>, [Online]. Available: <a href="https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/">https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/</a>.
                         </li>
                         <li class="content">
-                            IEEE Control Systems Society, "Impact of Control Technology, 2nd Edition," [Online]. Available: <a href="https://ieeecss.org/impact-control-technology-2nd-edition">https://ieeecss.org/impact-control-technology-2nd-edition</a>.
+                            "Robotics: Past, Present, and Future," <em>PMC</em>, [Online]. Available: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4247417/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4247417/</a>.
                         </li>
                         <li class="content">
-                            J. C. Maxwell, "I. On governors," <em>Proceedings of the Royal Society of London</em>, no. 16, pp. 270–283, 1868.
+                            "History of Robotics," <em>Stanford University</em>, [Online]. Available: <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html">https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html</a>.
                         </li>
                         <li class="content">
-                            S. Bennett, "A brief history of automatic control," <em>IEEE Control Systems Magazine</em>, vol. 16, no. 3, pp. 17–25, 1996.
+                            "What is a Robot?," <em>Robots Guide</em>, [Online]. Available: <a href="https://robotsguide.com/learn/what-is-a-robot">https://robotsguide.com/learn/what-is-a-robot</a>.
                         </li>
                         <li class="content">
-                            "Ctesibius' Water Clock," [Online]. Available: <a href="https://www.historyofinformation.com/detail.php?id=1946#:~:text=Ctesbius'%20objective%20was%20to%20regulate,container%20indicated%20the%20time%20elapsed.">https://www.historyofinformation.com/detail.php?id=1946</a>.
+                            Artificial Intelligence Center, "Shakey the Robot," 1984.
                         </li>
                     </ol>
             </div>
