@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradigms of Classical Mechanics</title>
+    <title>Paradigms of Quadcopter Dynamics</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
     <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -17,77 +17,239 @@
         <a href="../../index.html">Home</a>
     </div>
 
-    <!-- Blog Content -->
     <div class="container">
         <div class="blog-post">
-            <h1>Paradigms of Classical Mechanics: Newton vs Lagrange</h1>
+            <h1>In-Depth Dynamics of Quadcopter Motion: Euler-Newton vs Lagrangian</h1>
             <p class="date">March 5, 2025</p>
-
+    
             <div class="image-container">
-                <img src="../../assets/imgs/week1_dynamics_hero.jpg" alt="Classical Mechanics">
+                <img src="../../assets/imgs/quadcopter.png" alt="Quadcopter Dynamics">
             </div>
-
+    
             <div class="content">
-                <p>Classical mechanics offers two distinct ways to understand the motion of objects. The first views mechanics as a theory of <strong>forces</strong>, focusing on the causes that drive motion. The second sees it as a theory of <strong>motions themselves</strong>, emphasizing the paths objects naturally take. These perspectives align with <strong>Newtonian Mechanics</strong> and <strong>Lagrangian Mechanics</strong>, each offering unique insights into the dynamics of the universe.</p>
-                
-                <h1>Newtonian Mechanics: Forces and Accelerations</h1>
-                <p>Newtonian mechanics is rooted in forces—the pushes and pulls that govern how objects move. It is built on three foundational principles:</p>
-                <ol>
-                    <li><strong>Inertial Frames:</strong> Objects remain at rest or move with constant momentum unless acted upon.</li>
-                    <li><strong>Dynamics of Particles:</strong> The second law, \( F = ma \), describes how forces cause acceleration.</li>
-                    <li><strong>Action-Reaction:</strong> Every action has an equal and opposite reaction.</li>
-                </ol>
-                <p>Newton’s laws are intuitive, but their vector nature can be cumbersome for problems involving constraints or non-Cartesian systems.</p>
-
-                <h1>Lagrangian Mechanics: Energy and Variations</h1>
-                <p>Lagrangian mechanics shifts the focus from forces to <strong>energy</strong>. It is based on the <strong>principle of least action</strong>, where systems follow paths that minimize effort. The <strong>Lagrangian function</strong> is:</p>
-                <p>\[ L = T - V \]</p>
-                <p>where \( T \) is kinetic energy and \( V \) is potential energy. The equations of motion derive from the <strong>Euler-Lagrange equations</strong>:</p>
-                <p>\[ \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}} \right) - \frac{\partial L}{\partial q} = 0 \]</p>
-                <p>Generalized coordinates simplify the description of systems with constraints, making this approach powerful for complex problems.</p>
-
-                <h1>A Pendulum in Two Worlds: Newton vs Lagrange</h1>
-                <p>To illustrate, consider a simple pendulum with a bob of mass \( m \) and length \( l \).</p>
-
-                <h1>Newtonian Approach</h1>
-                <p>The forces acting on the bob are:</p>
-                <ul>
-                    <li><strong>Gravity</strong>: \( mg \) acts downward.</li>
-                    <li><strong>Tension</strong>: The string constrains motion to a circular arc.</li>
-                </ul>
-                <p>The tangential force component is:</p>
-                <p>\[ F_{\text{tangential}} = -mg \sin \theta \]</p>
-                <p>Using Newton’s second law:</p>
-                <p>\[ m l \ddot{\theta} = -mg \sin \theta \]</p>
-                <p>Simplifying:</p>
-                <p>\[ \ddot{\theta} + \frac{g}{l} \sin \theta = 0 \]</p>
-
-                <h1>Lagrangian Approach</h1>
-                <p>We define the system's energies:</p>
-                <ul>
-                    <li><strong>Kinetic Energy</strong>: \[ T = \frac{1}{2} m (l \dot{\theta})^2 \]</li>
-                    <li><strong>Potential Energy</strong>: \[ V = mg l (1 - \cos \theta) \]</li>
-                    <li><strong>Lagrangian</strong>: \[ L = \frac{1}{2} m l^2 \dot{\theta}^2 - mg l (1 - \cos \theta) \]</li>
-                </ul>
-                <p>Applying the Euler-Lagrange equation:</p>
-                <p>\[ \frac{d}{dt} \left( m l^2 \dot{\theta} \right) - (-mg l \sin \theta) = 0 \]</p>
-                <p>Simplifying:</p>
-                <p>\[ \ddot{\theta} + \frac{g}{l} \sin \theta = 0 \]</p>
-                <p>The same equation emerges, but with less effort.</p>
-
-                <h1>Why Choose Lagrangian Mechanics?</h1>
-                <p>Lagrangian mechanics offers several advantages:</p>
-                <ul>
-                    <li><strong>Generality</strong>: Handles constraints naturally.</li>
-                    <li><strong>Coordinate Freedom</strong>: Works well in non-Cartesian systems.</li>
-                    <li><strong>Conservation Laws</strong>: Links symmetries to conserved quantities via Noether’s theorem.</li>
-                </ul>
-
-                <h1>Conclusion</h1>
-                <p>Newtonian and Lagrangian mechanics provide complementary perspectives. Newton’s method focuses on forces and accelerations, while Lagrange’s emphasizes energy and variation principles. Both are essential tools in physics, offering deep insights into the workings of the universe.</p>
+                <h2>Setup and Coordinate Frames</h2>
+                <p>
+                    The world and robot frames are assigned as shown in the following figure. 
+                </p>
+                <figure style="text-align: center; margin: 0 auto;">
+                    <img src="../../assets/imgs/frame assignement2.png" alt="Global and Robot Frame Assignment" style="width:75%; display:block; margin: 0 auto;">
+                    <figcaption style="text-align: center;">Global and Robot Frame Assignment</figcaption>
+                </figure>
+                <p>
+                    Here, \(\{A\}\) is the global (world) frame and \(\{B\}\) is the robot frame whose origin is placed at the drone’s center of gravity. In the global frame, the linear position and angular position are given by
+                    \[
+                    \boldsymbol{\xi} =
+                    \begin{bmatrix} x \\ y \\ z \end{bmatrix}, \quad
+                    \boldsymbol{\eta} =
+                    \begin{bmatrix} \phi \\ \theta \\ \psi \end{bmatrix},
+                    \]
+                    and the combined state vector is
+                    \[
+                    \mathbf{q} =
+                    \begin{bmatrix} \boldsymbol{\xi} \\ \boldsymbol{\eta} \end{bmatrix}.
+                    \]
+                    In the robot frame, the linear velocity and angular velocity are:
+                    \[
+                    \mathbf{v}_B =
+                    \begin{bmatrix} v_x \\ v_y \\ v_z \end{bmatrix}, \quad
+                    \boldsymbol{\omega}_B =
+                    \begin{bmatrix} p \\ q \\ r \end{bmatrix}.
+                    \]
+                    The rotation matrix from frame \(\{A\}\) to \(\{B\}\) (using X-Y-Z Euler angles) is:
+                    \[
+                    \mathbf{R}_{X-Y-Z} =
+                    \begin{bmatrix}
+                    \cos\psi\cos\theta & \cos\psi\sin\theta\sin\phi - \sin\psi\cos\phi & \cos\psi\sin\theta\cos\phi + \sin\psi\sin\phi \\
+                    \sin\psi\cos\theta & \sin\psi\sin\theta\sin\phi + \cos\psi\cos\phi & \sin\psi\sin\theta\cos\phi - \cos\psi\sin\phi \\
+                    -\sin\theta & \cos\theta\sin\phi & \cos\theta\cos\phi
+                    \end{bmatrix}.
+                    \]
+                    The global linear velocity is \(\dot{\boldsymbol{\xi}}\) and the angular velocities in the body frame are related to the Euler angle rates via an analytical Jacobian \(W_\eta\):
+                    \[
+                    \boldsymbol{\omega}_B = W_\eta \dot{\boldsymbol{\eta}} = 
+                    \begin{bmatrix}
+                    1 & 0 & -\sin\theta \\
+                    0 & \cos\phi & \cos\theta\sin\phi \\
+                    0 & -\sin\phi & \cos\theta\cos\phi
+                    \end{bmatrix}
+                    \begin{bmatrix}
+                    \dot{\phi} \\ \dot{\theta} \\ \dot{\psi}
+                    \end{bmatrix}.
+                    \]
+                </p>
+    
+                <h2>Basic Forces and Torques</h2>
+                <p>
+                    The quadcopter is actuated by controlling the angular velocities of its rotors. Each rotor \(i\) produces a thrust force:
+                    \[
+                    f_i = k\,\omega_i^2,
+                    \]
+                    where \(k\) is the lift constant defined by
+                    \[
+                    k = C_T\,\rho\,A_{r_i}\,r_i^2,
+                    \]
+                    with \(A_{r_i}\) being the rotor disk area, \(r_i\) the rotor radius, \(C_T\) the thrust coefficient, and \(\rho\) the air density. The total thrust is:
+                    \[
+                    T = \sum_{i=1}^{4} f_i = k \sum_{i=1}^{4} \omega_i^2,
+                    \]
+                    and, in the robot frame, the thrust vector is:
+                    \[
+                    \mathbf{T} =
+                    \begin{bmatrix} 0 \\ 0 \\ T \end{bmatrix}.
+                    \]
+                </p>
+                <p>
+                    Moreover, each rotor generates a reaction torque due to drag:
+                    \[
+                    \tau_{M_i} = b\,\omega_i^2 + I_M\,\dot{\omega}_i,
+                    \]
+                    where \(b\) is the drag coefficient and \(I_M\) is the rotor inertia (often neglected). The net torque applied to the quadcopter is then given by:
+                    \[
+                    \boldsymbol{\tau} =
+                    \begin{bmatrix}
+                    \tau_\phi \\
+                    \tau_\theta \\
+                    \tau_\psi
+                    \end{bmatrix}
+                    =
+                    \begin{bmatrix}
+                    l k(-\omega_1^2 + \omega_2^2 + \omega_3^2 - \omega_4^2) \\
+                    l k(\omega_1^2 - \omega_2^2 + \omega_3^2 - \omega_4^2) \\
+                    \tau_{M_1} + \tau_{M_2} - \tau_{M_3} - \tau_{M_4}
+                    \end{bmatrix}.
+                    \]
+                    The first two terms provide torques about the \(x\) and \(y\) axes (roll and pitch), while the third term produces yaw torque.
+                </p>
+    
+                <h2>Euler-Newton Dynamics</h2>
+                <h3> i) Translational Dynamics</h3>
+                <p>
+                    Applying Newton’s Second Law, the translational dynamics in the global frame are given by:
+                    \[
+                    m\,\ddot{\boldsymbol{\xi}} = -mg
+                    \begin{bmatrix}
+                    0 \\ 0 \\ 1
+                    \end{bmatrix}
+                    + \mathbf{R}_{[3\times3]}
+                    \begin{bmatrix}
+                    0 \\ 0 \\ T
+                    \end{bmatrix}.
+                    \]
+                    Dividing by \(m\) yields:
+                    \[
+                    \begin{bmatrix}
+                    \ddot{x} \\ \ddot{y} \\ \ddot{z}
+                    \end{bmatrix}
+                    = -g
+                    \begin{bmatrix}
+                    0 \\ 0 \\ 1
+                    \end{bmatrix}
+                    + \frac{1}{m}\,\mathbf{R}_{[3\times3]}
+                    \begin{bmatrix}
+                    0 \\ 0 \\ T
+                    \end{bmatrix}.
+                    \]
+                </p>
+    
+                <h3> ii) Rotational Dynamics</h3>
+                <p>
+                    The rotational dynamics are described by the Newton-Euler equation:
+                    \[
+                    \boldsymbol{\tau} = I\,\dot{\boldsymbol{\omega}}_B + \boldsymbol{\omega}_B \times (I\,\boldsymbol{\omega}_B).
+                    \]
+                    Rearranging, we obtain:
+                    \[
+                    I\,\dot{\boldsymbol{\omega}}_B = \boldsymbol{\tau} - \boldsymbol{\omega}_B \times (I\,\boldsymbol{\omega}_B).
+                    \]
+                    For a quadcopter, this can be written component-wise as:
+                    \[
+                    \begin{aligned}
+                    I_{xx}\dot{p} &= \tau_\phi - (I_{zz} - I_{yy})\,q\,r, \\
+                    I_{yy}\dot{q} &= \tau_\theta - (I_{xx} - I_{zz})\,p\,r, \\
+                    I_{zz}\dot{r} &= \tau_\psi - (I_{yy} - I_{xx})\,p\,q.
+                    \end{aligned}
+                    \]
+                    Alternatively, using the rotor inputs:
+                    \[
+                    I\,
+                    \begin{bmatrix}
+                    \dot{p} \\ \dot{q} \\ \dot{r}
+                    \end{bmatrix}
+                    =
+                    \begin{bmatrix}
+                    l k(-\omega_1^2 + \omega_2^2 + \omega_3^2 - \omega_4^2) \\
+                    l k(\omega_1^2 - \omega_2^2 + \omega_3^2 - \omega_4^2) \\
+                    \tau_{M_1} + \tau_{M_2} - \tau_{M_3} - \tau_{M_4}
+                    \end{bmatrix}
+                    - \left(
+                    \begin{bmatrix}
+                    p \\ q \\ r
+                    \end{bmatrix}
+                    \times I
+                    \begin{bmatrix}
+                    p \\ q \\ r
+                    \end{bmatrix}
+                    \right).
+                    \]
+                </p>
+    
+                <h2>Lagrangian Dynamics</h2>
+                <p>
+                    The Lagrangian formulation begins with the definition:
+                    \[
+                    \mathcal{L}(q, \dot{q}) = KE_{\text{translational}} + KE_{\text{rotational}} - PE.
+                    \]
+                </p>
+                <h2>Energy Terms</h2>
+                <p>
+                    The translational kinetic energy is:
+                    \[
+                    KE_{\text{translational}} = \frac{1}{2}m\left(\dot{x}^2 + \dot{y}^2 + \dot{z}^2\right).
+                    \]
+                    The rotational kinetic energy, expressed in the body frame, is:
+                    \[
+                    KE_{\text{rotational}} = \frac{1}{2}\,\omega_B^T I \,\omega_B = \frac{I_{xx_b}\,p^2}{2} + \frac{I_{yy_b}\,q^2}{2} + \frac{I_{zz_b}\,r^2}{2}.
+                    \]
+                    The potential energy due to gravity is:
+                    \[
+                    PE = m g z.
+                    \]
+                    Thus, the Lagrangian is:
+                    \[
+                    \mathcal{L}(q, \dot{q}) = \frac{m\dot{x}^2}{2} + \frac{m\dot{y}^2}{2} + \frac{m\dot{z}^2}{2} + \frac{I_{xx_b}\,p^2}{2} + \frac{I_{yy_b}\,q^2}{2} + \frac{I_{zz_b}\,r^2}{2} - m g z.
+                    \]
+                </p>
+                <h2>Euler–Lagrange Equations</h2>
+                <p>
+                    The equations of motion are derived from:
+                    \[
+                    \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}_i}\right) - \frac{\partial \mathcal{L}}{\partial q_i} = Q_i,
+                    \]
+                    where \(q_i\) are the generalized coordinates (i.e., \(x, y, z, \phi, \theta, \psi\)) and \(Q_i\) represent the generalized forces. For example, for the coordinate \(x\):
+                    \[
+                    \frac{\partial \mathcal{L}}{\partial \dot{x}} = m\dot{x}, \quad \frac{\partial \mathcal{L}}{\partial x} = 0 \quad \Longrightarrow \quad m\ddot{x} = Q_x,
+                    \]
+                    where \(Q_x\) is the \(x\)-component of the thrust force (after transformation to the global frame). A similar procedure applies to \(y\) and \(z\). For the rotational coordinates (\(\phi, \theta, \psi\)), the Euler–Lagrange equations yield a set of coupled differential equations that include the inertial and coupling effects present in \(KE_{\text{rotational}}\).
+                </p>
+    
+                <h2>Comparison and Discussion</h2>
+                <p>
+                    Both the Euler-Newton and Lagrangian formulations yield equivalent equations of motion. The Euler-Newton approach directly relates measurable forces and torques to linear and angular accelerations, making it highly intuitive for real-time control and sensor integration. In contrast, the Lagrangian method, which is derived from energy principles, elegantly incorporates constraints and exposes underlying symmetries—facilitating theoretical analysis and the application of conservation laws through Noether’s theorem.
+                </p>
+                <p>
+                    A thorough understanding of both approaches is crucial for advanced quadcopter design and control, as each provides unique insights into the system's behavior and performance.
+                </p>
+    
+                <h2>Conclusion</h2>
+                <p>
+                    This rigorous derivation of quadcopter dynamics using both the Euler-Newton and Lagrangian formulations underscores their equivalence and respective advantages. The Euler-Newton method offers a clear, force- and torque-based perspective ideal for control applications, whereas the Lagrangian framework delivers a unified, energy-based approach that systematically accounts for constraints and coupling effects. Together, these methodologies form the foundation for robust quadcopter modeling and control strategies.
+                </p>
             </div>
         </div>
     </div>
+    
+    
+    
 
     <div class="footer">
         &copy; 2025 - DCVAM Blog
