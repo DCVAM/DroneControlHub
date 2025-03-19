@@ -30,113 +30,113 @@
 
             <div class="content">
                 
-                    <h1>Introduction</h1>
-                    <p class="content">There are robots all around us today. In one way or another, every person is connected to a robot—whether it's industrial robots or toy robots, robotics is involved in nearly every field. But have you ever wondered why robots came into existence? Why are they so important in today's fast-moving modern world? What would happen if robots disappeared today? Or will robots ever take over the world?</p>
-                    <p class="content">In this article, we will dive deep into the origin and evolution of robots and robotics. Where did this term come from? When was the first robot made? And what exactly is robotics? Let’s start by understanding what a robot is.</p>
-                
-                    <h1>Robot and Robotics</h1>
-                    <p class="content">We have seen robots in a variety of movies, from R2D2 in <em>Star Wars</em> to Atom in <em>Real Steel</em>, from Ultron in <em>Avengers: Age of Ultron</em> to Mecha Godzilla in <em>Godzilla vs. Kong</em>. People have portrayed robots in various forms, but today, we see robots not as a threat to the world but as helpers. Robots are used in industries to automate manufacturing processes, in self-driving cars, and even as toys, such as drones.</p>
-                    <p class="content">However, defining a robot with a single, universally accepted definition is somewhat difficult. According to <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html">Stanford University</a>, there are multiple definitions for the term "robot," depending on different sources:</p>
-                    <ul>
-                        <li><strong>Robot Institute of America, 1979:</strong> "A reprogrammable, multifunctional manipulator designed to move material, parts, tools, or specialized devices through various programmed motions for the performance of a variety of tasks."</li>
-                        <li><strong>Webster's Dictionary:</strong> "An automatic device that performs functions normally ascribed to humans or a machine in the form of a human."</li>
-                        <li><strong>British Department of Industry:</strong> "A reprogrammable manipulator device."</li>
-                        <li><strong>Mike Brady:</strong> "Robotics is that field concerned with the intelligent connection of perception to action."</li>
-                    </ul>
-                
-                    <h1>History and Evolution</h1>
-                    <p class="content">In this section, we will explore the origins of robots and how they evolved into one of the most essential technologies today. Just like control systems, the roots of robotics can be traced back thousands of years—about 5000 years ago.</p>
-                
-                    <h2>Need for Automation</h2>
-                    <p class="content">Since the beginning of civilization, humans have always sought ways to make their work easier. Automation has been a long-standing goal, minimizing human effort while maximizing efficiency. The first recorded evidence of automated machines dates back as early as 3000 B.C., when Egyptian water clocks used human figurines to strike the hour bells. Another example is the Antikythera mechanism, a complex gear-driven device built by the Greeks around 100 BCE to predict astronomical events.</p>
-                    <figure style="text-align: center;">
-                        <img src="anthikytrha mech.png" alt="Antikythera mechanism" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 1: Antikythera mechanism</figcaption>
-                    </figure>
-                    <p class="content">Throughout history, people have consistently sought ways to automate tasks and reduce their workload. This drive for automation is the fundamental motivation behind the development of robots.</p>
-                
-                    <h2>Origin of "Robots" and "Robotics"</h2>
-                    <p class="content">The concept of robots existed long before the term was coined, but the word "robot" was first used in the early 20th century. It is quite surprising that the word "robot" was introduced not by a scientist but by a writer. In 1920, Karel Čapek wrote a play titled <em>Rossum’s Universal Robots</em>, in which the term was used for the first time. The word "robot" is derived from the Czech word <strong>"robota"</strong>, which, fittingly, means "forced labor." In the play, robots were artificially created humans who were exploited by factory owners to perform labor, leading to one of the earliest depictions of a robot uprising—where the robots eventually rebelled and destroyed humanity.</p>
-                    <figure style="text-align: center;">
-                        <img src="RURR.png" alt="Rossum’s Universal Robots, 1938" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 2: Rossum’s Universal Robots, 1938</figcaption>
-                    </figure>
-                    <p class="content">The word <strong>"robotics"</strong> was also introduced by a writer. The term first appeared in Isaac Asimov’s science-fiction story <em>Liar!</em> (1941), in which a robot is mistakenly given the ability to read minds. Isaac Asimov is particularly significant in the field of robotics because, in his next work, <em>Runaround</em> (1942), he introduced the famous Three Laws of Robotics:</p>
-                    <ol>
-                        <li>A robot may not injure a human being, or, through inaction, allow a human being to come to harm.</li>
-                        <li>A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.</li>
-                        <li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.</li>
-                    </ol>
-                    <figure style="text-align: center;">
-                        <img src="Liar!.png" alt="Isaac Asimov’s science-fiction story Liar!" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 3: Isaac Asimov’s science-fiction story <em>Liar!</em></figcaption>
-                    </figure>
-                
-                    <h2>Unimate: The First Robot</h2>
-                    <p class="content">Today, we often think of robots as humanoid machines that look and act like humans. However, the first commercial robot was a large and bulky robotic arm called "Unimate." In 1954, George Devol filed a patent describing an autonomous machine that could store step-by-step digital commands to move parts in a factory (which he called a "programmed article transfer" device). Then, in 1958, he partnered with Joseph Engelberger to form a company called "Unimation," and their first product was "Unimate," which was put into service at a General Motors plant in Ewing Township, N.J.</p>
-                    <figure style="text-align: center;">
-                        <img src="unimate.png" alt="Unimate: First Industrial Robot" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 4: Unimate: First Industrial Robot</figcaption>
-                    </figure>
-                    <p class="content">The "Unimate" was programmable and could store programs consisting of nearly 200 moves. It was used for removing and stacking hot metal parts from a die-casting machine. Unimate arms continued to be developed and sold by licensees worldwide. However, Unimate was very large and used hydraulics, which often leaked oil, making it difficult to operate.</p>
-                
-                    <h2>The Stanford Arm</h2>
-                    <p class="content">After Unimate, Victor Scheinman of Stanford University designed a 6-degree-of-freedom robotic arm called the "Stanford Arm" in 1969. This arm weighed only 15 pounds, significantly less than the metric-ton Unimate. It could move in all six degrees of freedom and did not require hydraulics, as it used motors as actuators, eliminating the problems associated with hydraulic leaks.</p>
-                    <figure style="text-align: center;">
-                        <img src="stanfordarm.png" alt="Stanford Arm" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 5: Stanford Arm</figcaption>
-                    </figure>
-                    <p class="content">One of the most important aspects of the Stanford Arm in the evolution of robotics is that it was the first robotic arm to be controlled not just by turn-by-turn instructions stored in memory, as with Unimate, but by software running on a computer. This gave robotic arms the ability to perform tasks by knowing only the final position of their end effector using a technique called inverse kinematics, allowing them to interact with and understand their environment.</p>
-                
-                    <h2>Shakey: The First Mobile Robot</h2>
-                    <p class="content">While Unimate was in development, researchers at Stanford University were working on what John Markoff called the “great-grandfather of self-driving cars and military drones” — <strong>Shakey the Robot</strong>. This robot used a TV camera, an optical range finder, an antenna radio link, bump detectors, and a push bar to move objects. This allowed Shakey to:</p>
-                    <ul>
-                        <li class="content">Locate a specific spot in a seven-room environment</li>
-                        <li class="content">Find designated boxes and push them together into groups, according to instructions</li>
-                        <li class="content">Avoid obstacles</li>
-                    </ul>
-                    <figure style="text-align: center;">
-                        <img src="shakey.png" alt="Computer scientist Charles Rosen, one of the heads of the Shakey project" style="width:60%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 6: Computer scientist Charles Rosen, one of the heads of the Shakey project</figcaption>
-                    </figure>
-                    <p class="content">Shakey was a breakthrough in robotics because its control software was structured into four layers. This layered architecture was the first of its kind in robotics and became a model for future generations of robots. Shakey introduced the idea of Artificial Intelligence in robotics.</p>
-                
-                    <h2>Roomba: A Robot for Homes</h2>
-                    <p class="content">By 2002, thanks to mathematical concepts such as state estimation and AI, robots were able to understand and interact with their environment. iRobot, a company founded by MIT alumni Colin Angle, Helen Greiner, and Rodney Brooks, introduced <strong>Roomba</strong>, a vacuum-cleaning robot. This robot was capable of mapping a house, navigating autonomously while avoiding obstacles, and returning to its hub for charging.</p>
-                    <figure style="text-align: center;">
-                        <img src="roomba.png" alt="Roomba" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
-                        <figcaption>Figure 7: Roomba</figcaption>
-                    </figure>
-                    <p class="content">Roomba utilized Simultaneous Localization and Mapping (SLAM) to map and localize itself at the same time. It used a fusion of sensors to be aware of its surroundings and implemented path-planning algorithms to navigate efficiently—all computed on an onboard computer.</p>
-                
-                    <h1>Conclusion</h1>
-                    <p class="content">The evolution of robotics demonstrates the incremental advancements that have led to the robots and robotic systems we see today. From Spot to Atlas, each robot builds upon the knowledge gained from past experiments, driving further innovation in the field.</p>
-                
-                    <h1>Personal Remarks</h1>
-                    <p class="content">I always thought of robotics as something purely hardware related. As I grew and started to learn more things, I thought of robotics as an intersection of electrical engineering, computer science, and mechanical engineering. But as I learned more about robotics, specifically, I realized that there is a lot of mathematics involved in this field, be it different simulations such as Monte Carlo Simulation or state estimations and Bayesian filters to update the belief about localization. From Kinematics to Dynamics. This reminds me of a line by Veritasium that he said about micro mouse, he said "... it's not a hardware problem, it's not a software problem, it's a robotics problem...". Therefore, I feel like there should be a separate field of robotics in undergraduate degrees.</p>
+                <h1>Introduction</h1>
+                <p class="content">There are robots all around us today. In one way or another, every person is connected to a robot—whether it's industrial robots or toy robots, robotics is involved in nearly every field. But have you ever wondered why robots came into existence? Why are they so important in today's fast-moving modern world? What would happen if robots disappeared today? Or will robots ever take over the world?</p>
+                <p class="content">In this article, we will dive deep into the origin and evolution of robots and robotics. Where did this term come from? When was the first robot made? And what exactly is robotics? Let’s start by understanding what a robot is.</p>
+            
+                <h1>Robot and Robotics</h1>
+                <p class="content">We have seen robots in a variety of movies, from R2D2 in <em>Star Wars</em> to Atom in <em>Real Steel</em>, from Ultron in <em>Avengers: Age of Ultron</em> to Mecha Godzilla in <em>Godzilla vs. Kong</em>. People have portrayed robots in various forms, but today, we see robots not as a threat to the world but as helpers. Robots are used in industries to automate manufacturing processes, in self-driving cars, and even as toys, such as drones.</p>
+                <p class="content">However, defining a robot with a single, universally accepted definition is somewhat difficult. According to <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html">Stanford University</a>, there are multiple definitions for the term "robot," depending on different sources:</p>
+                <ul>
+                    <li><strong>Robot Institute of America, 1979:</strong> "A reprogrammable, multifunctional manipulator designed to move material, parts, tools, or specialized devices through various programmed motions for the performance of a variety of tasks."</li>
+                    <li><strong>Webster's Dictionary:</strong> "An automatic device that performs functions normally ascribed to humans or a machine in the form of a human."</li>
+                    <li><strong>British Department of Industry:</strong> "A reprogrammable manipulator device."</li>
+                    <li><strong>Mike Brady:</strong> "Robotics is that field concerned with the intelligent connection of perception to action."</li>
+                </ul>
+            
+                <h1>History and Evolution</h1>
+                <p class="content">In this section, we will explore the origins of robots and how they evolved into one of the most essential technologies today. Just like control systems, the roots of robotics can be traced back thousands of years—about 5000 years ago.</p>
+            
+                <h2>Need for Automation</h2>
+                <p class="content">Since the beginning of civilization, humans have always sought ways to make their work easier. Automation has been a long-standing goal, minimizing human effort while maximizing efficiency. The first recorded evidence of automated machines dates back as early as 3000 B.C., when Egyptian water clocks used human figurines to strike the hour bells. Another example is the Antikythera mechanism, a complex gear-driven device built by the Greeks around 100 BCE to predict astronomical events.</p>
+                <figure style="text-align: center;">
+                    <img src="anthikytrha mech.png" alt="Antikythera mechanism" style="width:75%; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption>Figure 1: Antikythera mechanism</figcaption>
+                </figure>
+                <p class="content">Throughout history, people have consistently sought ways to automate tasks and reduce their workload. This drive for automation is the fundamental motivation behind the development of robots.</p>
+            
+                <h2>Origin of "Robots" and "Robotics"</h2>
+                <p class="content">The concept of robots existed long before the term was coined, but the word "robot" was first used in the early 20th century. It is quite surprising that the word "robot" was introduced not by a scientist but by a writer. In 1920, Karel Čapek wrote a play titled <em>Rossum’s Universal Robots</em>, in which the term was used for the first time. The word "robot" is derived from the Czech word <strong>"robota"</strong>, which, fittingly, means "forced labor." In the play, robots were artificially created humans who were exploited by factory owners to perform labor, leading to one of the earliest depictions of a robot uprising—where the robots eventually rebelled and destroyed humanity.</p>
+                <figure style="text-align: center;">
+                    <img src="RURR.png" alt="Rossum’s Universal Robots, 1938" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption>Figure 2: Rossum’s Universal Robots, 1938</figcaption>
+                </figure>
+                <p class="content">The word <strong>"robotics"</strong> was also introduced by a writer. The term first appeared in Isaac Asimov’s science-fiction story <em>Liar!</em> (1941), in which a robot is mistakenly given the ability to read minds. Isaac Asimov is particularly significant in the field of robotics because, in his next work, <em>Runaround</em> (1942), he introduced the famous Three Laws of Robotics:</p>
+                <ol>
+                    <li>A robot may not injure a human being, or, through inaction, allow a human being to come to harm.</li>
+                    <li>A robot must obey the orders given to it by human beings, except where such orders would conflict with the First Law.</li>
+                    <li>A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.</li>
+                </ol>
+                <figure style="text-align: center;">
+                    <img src="Liar!.png" alt="Isaac Asimov’s science-fiction story Liar!" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption>Figure 3: Isaac Asimov’s science-fiction story <em>Liar!</em></figcaption>
+                </figure>
+            
+                <h2>Unimate: The First Robot</h2>
+                <p class="content">Today, we often think of robots as humanoid machines that look and act like humans. However, the first commercial robot was a large and bulky robotic arm called "Unimate." In 1954, George Devol filed a patent describing an autonomous machine that could store step-by-step digital commands to move parts in a factory (which he called a "programmed article transfer" device). Then, in 1958, he partnered with Joseph Engelberger to form a company called "Unimation," and their first product was "Unimate," which was put into service at a General Motors plant in Ewing Township, N.J.</p>
+                <figure style="text-align: center;">
+                    <img src="unimate.png" alt="Unimate: First Industrial Robot" style="width:50%; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption>Figure 4: Unimate: First Industrial Robot</figcaption>
+                </figure>
+                <p class="content">The "Unimate" was programmable and could store programs consisting of nearly 200 moves. It was used for removing and stacking hot metal parts from a die-casting machine. Unimate arms continued to be developed and sold by licensees worldwide. However, Unimate was very large and used hydraulics, which often leaked oil, making it difficult to operate.</p>
+            
+                <h2>The Stanford Arm</h2>
+                <p class="content">After Unimate, Victor Scheinman of Stanford University designed a 6-degree-of-freedom robotic arm called the "Stanford Arm" in 1969. This arm weighed only 15 pounds, significantly less than the metric-ton Unimate. It could move in all six degrees of freedom and did not require hydraulics, as it used motors as actuators, eliminating the problems associated with hydraulic leaks.</p>
+                <figure style="text-align: center;">
+                    <img src="stanfordarm.png" alt="Stanford Arm" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption>Figure 5: Stanford Arm</figcaption>
+                </figure>
+                <p class="content">One of the most important aspects of the Stanford Arm in the evolution of robotics is that it was the first robotic arm to be controlled not just by turn-by-turn instructions stored in memory, as with Unimate, but by software running on a computer. This gave robotic arms the ability to perform tasks by knowing only the final position of their end effector using a technique called inverse kinematics, allowing them to interact with and understand their environment.</p>
+            
+                <h2>Shakey: The First Mobile Robot</h2>
+                <p class="content">While Unimate was in development, researchers at Stanford University were working on what John Markoff called the “great-grandfather of self-driving cars and military drones” — <strong>Shakey the Robot</strong>. This robot used a TV camera, an optical range finder, an antenna radio link, bump detectors, and a push bar to move objects. This allowed Shakey to:</p>
+                <ul>
+                    <li class="content">Locate a specific spot in a seven-room environment</li>
+                    <li class="content">Find designated boxes and push them together into groups, according to instructions</li>
+                    <li class="content">Avoid obstacles</li>
+                </ul>
+                <figure style="text-align: center;">
+                    <img src="shakey.png" alt="Computer scientist Charles Rosen, one of the heads of the Shakey project" style="width:60%; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption>Figure 6: Computer scientist Charles Rosen, one of the heads of the Shakey project</figcaption>
+                </figure>
+                <p class="content">Shakey was a breakthrough in robotics because its control software was structured into four layers. This layered architecture was the first of its kind in robotics and became a model for future generations of robots. Shakey introduced the idea of Artificial Intelligence in robotics.</p>
+            
+                <h2>Roomba: A Robot for Homes</h2>
+                <p class="content">By 2002, thanks to mathematical concepts such as state estimation and AI, robots were able to understand and interact with their environment. iRobot, a company founded by MIT alumni Colin Angle, Helen Greiner, and Rodney Brooks, introduced <strong>Roomba</strong>, a vacuum-cleaning robot. This robot was capable of mapping a house, navigating autonomously while avoiding obstacles, and returning to its hub for charging.</p>
+                <figure style="text-align: center;">
+                    <img src="roomba.png" alt="Roomba" style="width:25%; display: block; margin-left: auto; margin-right: auto;">
+                    <figcaption>Figure 7: Roomba</figcaption>
+                </figure>
+                <p class="content">Roomba utilized Simultaneous Localization and Mapping (SLAM) to map and localize itself at the same time. It used a fusion of sensors to be aware of its surroundings and implemented path-planning algorithms to navigate efficiently—all computed on an onboard computer.</p>
+            
+                <h1>Conclusion</h1>
+                <p class="content">The evolution of robotics demonstrates the incremental advancements that have led to the robots and robotic systems we see today. From Spot to Atlas, each robot builds upon the knowledge gained from past experiments, driving further innovation in the field.</p>
+            
+                <h1>Personal Remarks</h1>
+                <p class="content">I always thought of robotics as something purely hardware related. As I grew and started to learn more things, I thought of robotics as an intersection of electrical engineering, computer science, and mechanical engineering. But as I learned more about robotics, specifically, I realized that there is a lot of mathematics involved in this field, be it different simulations such as Monte Carlo Simulation or state estimations and Bayesian filters to update the belief about localization. From Kinematics to Dynamics. This reminds me of a line by Veritasium that he said about micro mouse, he said "... it's not a hardware problem, it's not a software problem, it's a robotics problem...". Therefore, I feel like there should be a separate field of robotics in undergraduate degrees.</p>
 
-                    <h1>References</h1>
-                    <ol>
-                        <li class="content">
-                            "Robot Technology," <em>Encyclopedia Britannica</em>, [Online]. Available: <a href="https://www.britannica.com/technology/robot-technology">https://www.britannica.com/technology/robot-technology</a>.
-                        </li>
-                        <li class="content">
-                            "History of Robotics: A Comprehensive History of Evolution and Innovation," <em>Keybotic</em>, [Online]. Available: <a href="https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/">https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/</a>.
-                        </li>
-                        <li class="content">
-                            "Robotics: Past, Present, and Future," <em>PMC</em>, [Online]. Available: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4247417/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4247417/</a>.
-                        </li>
-                        <li class="content">
-                            "History of Robotics," <em>Stanford University</em>, [Online]. Available: <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html">https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html</a>.
-                        </li>
-                        <li class="content">
-                            "What is a Robot?," <em>Robots Guide</em>, [Online]. Available: <a href="https://robotsguide.com/learn/what-is-a-robot">https://robotsguide.com/learn/what-is-a-robot</a>.
-                        </li>
-                        <li class="content">
-                            Artificial Intelligence Center, "Shakey the Robot," 1984.
-                        </li>
-                    </ol>
-            </div>
+                <h1>References</h1>
+                <ol>
+                    <li class="content">
+                        "Robot Technology," <em>Encyclopedia Britannica</em>, [Online]. Available: <a href="https://www.britannica.com/technology/robot-technology">https://www.britannica.com/technology/robot-technology</a>.
+                    </li>
+                    <li class="content">
+                        "History of Robotics: A Comprehensive History of Evolution and Innovation," <em>Keybotic</em>, [Online]. Available: <a href="https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/">https://keybotic.com/history-of-robotics-a-comprehensive-history-of-evolution-and-innovation/</a>.
+                    </li>
+                    <li class="content">
+                        "Robotics: Past, Present, and Future," <em>PMC</em>, [Online]. Available: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4247417/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4247417/</a>.
+                    </li>
+                    <li class="content">
+                        "History of Robotics," <em>Stanford University</em>, [Online]. Available: <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html">https://cs.stanford.edu/people/eroberts/courses/soco/projects/1998-99/robotics/history.html</a>.
+                    </li>
+                    <li class="content">
+                        "What is a Robot?," <em>Robots Guide</em>, [Online]. Available: <a href="https://robotsguide.com/learn/what-is-a-robot">https://robotsguide.com/learn/what-is-a-robot</a>.
+                    </li>
+                    <li class="content">
+                        Artificial Intelligence Center, "Shakey the Robot," 1984.
+                    </li>
+                </ol>
+        </div>
         </div>
     </div>
 
