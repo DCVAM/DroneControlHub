@@ -37,7 +37,7 @@ body {
     right: 0;
     background-color: rgba(43, 44, 47, 0.95);
     /* padding: 20px 50px; */
-    padding-block: clamp(10px, 1vw + 2px,30px);
+    padding-block: clamp(15px, 1vw + 2px,30px);
     display: flex;
     justify-content: space-between;
     /* gap: px; */
@@ -68,7 +68,7 @@ body {
 .container {
     max-width: max(70%,40em);
     /* max-width: 800px; */
-    padding: 80px 20px 40px;
+    padding: clamp(25px,4.8vw + 2px,80px) 20px 40px;
     text-align: justify;
 }
 
@@ -101,7 +101,7 @@ body {
     font-size: clamp(var(--fs-s-400), 1.4vw + 0.4rem,var(--fs-l-400));
     font-weight: 600;
     color: #ff9a44;
-    margin-top: 40px;
+    margin-top: clamp(12px,1.8vw + 4px,40px);
 }
 .content h1 {
     font-family: inherit;
@@ -109,7 +109,7 @@ body {
     font-size: clamp(var(--fs-s-600), 1.6vw + 0.7rem,var(--fs-l-600));
     font-weight: 600;
     color: #ff9a44;
-    margin-top: 40px;
+    margin-top: clamp(12px,2.3vw + 4px,40px);
 }
 .content p {
     margin-bottom: 20px;
