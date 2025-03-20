@@ -5,14 +5,14 @@
     --fs-l-800: 60px;
     --fs-l-600: 36px;
     --fs-l-400: 26px;
-    --fs-l-200: 20px;
+    --fs-l-200: 24px;
     --fs-l-150: 18px;
     --fs-l-100: 15px;
 
     --fs-s-800: 30px;
     --fs-s-600: 18px;
     --fs-s-400: 13px;
-    --fs-s-200: 10px;
+    --fs-s-200: 12px;
     --fs-s-150: 9px;
     --fs-s-100: 7.5px;
 }
@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-wrap: balance;
+    /* text-wrap: balance; */
 }
 
 /* Navbar */
@@ -63,7 +63,7 @@ body {
 
 /* Page Content */
 .container {
-    max-width: 70%;
+    max-width: max(70%,40em);
     /* max-width: 800px; */
     padding: 80px 20px 40px;
     text-align: justify;
@@ -125,8 +125,8 @@ body {
 
 .image-container img {
     /* width: 100%; */
-    /* width:clamp(300px,3rem,600px); */
-    width: 60%;
+    width:clamp(300px,60%,600px);
+    /* width: 60%; */
     min-width: 300px;
     max-width: 550px;
     border-radius: 8px;
