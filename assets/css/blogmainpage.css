@@ -9,6 +9,56 @@
   --hover-color: rgb(204, 215, 252);
 }
 
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(43, 44, 47, 0.95);
+  /* padding: 20px 50px; */
+  padding-block: clamp(10px, 1vw + 2px,30px);
+  display: flex;
+  justify-content: center;
+  /* gap: px; */
+  align-items: baseline;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.navbar i {
+  /* position: absolute; */
+  color: inherit;
+  font-size: clamp(10px, 1.1vw + 0.3rem,18px);
+  margin-inline: clamp(8px, 1.5vw + 1px, 10px);
+  /* top: 10%; */
+  transition: color 0.3s ease;
+  /* right: 100%; */
+  align-self: center;
+  /* margin-right: 20px; */
+  /* text-align: center; */
+}
+
+.navbar a {
+  color: #ff9a44;
+  text-decoration: none;
+  font-size: clamp(13px, 1.1vw + 0.3rem,18px);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  /* margin-inline: clamp(13px, 1.5vw + 1px, 20px); */
+}
+
+.navbar a:hover {
+  color: #ffbb77;
+}
+/* .navbar a i:hover {
+  color: #ffbb77;
+} */
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
